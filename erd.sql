@@ -43,3 +43,37 @@ CREATE TABLE workout_plans(
 	workout_sets NUMBER(2),
 	PRIMARY KEY (workout_plan_ID)
 );
+
+create table clients_guests(
+  guest_id      number(9) primary key not null,
+  member_id     number(9) not null,
+  f_name        varchar2(25) not null,
+  l_name        varchar2(25),
+  address       varchar2(80),
+  relation      varchar2(25) not null,
+  contact_no    number(10)
+);
+
+create table gym_attendence(
+  member_id     number(9) primary key not null,
+  check_in      date primary key not null,
+  check_out     date,
+  centre_id     number(9),
+  guest_id      number(9)
+);
+
+create table payments(
+  payment_id    number(9) primary key not null,
+  member_id     number(9) not null,
+  amount        number(6) not null,
+  payment_date  date,
+  payment_method  varchar2(25)
+);
+
+create table membership(
+  membership_id number(9) primary key not null,
+  plan_id       number(9) not null,
+  start_date    date,
+  end_date      date,
+  status        number(1) check (status in (0,1))
+);
