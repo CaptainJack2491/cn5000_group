@@ -29,39 +29,39 @@ CREATE TABLE EQUIPMENT_RENTAL
     PRIMARY KEY (EQUIPMENT_ID)
 );
 
-create table clients_guests
+CREATE TABLE CLIENTS_GUESTS
 (
-  guest_id      number(9) primary key not null,
-  member_id     number(9) not null,
-  f_name        varchar2(25) not null,
-  l_name        varchar2(25),
-  address       varchar2(80),
-  relation      varchar2(25) not null,
-  contact_no    number(10)
+  GUEST_ID      NUMBER(9) PRIMARY KEY NOT NULL,
+  MEMBER_ID     NUMBER(9) NOT NULL,
+  F_NAME        VARCHAR2(25) NOT NULL,
+  L_NAME        VARCHAR2(25),
+  ADDRESS       VARCHAR2(80),
+  RELATION      VARCHAR2(25) NOT NULL,
+  CONTACT_NO    NUMBER(10)
 );
 
-create table gym_attendence(
-  member_id     number(9) primary key not null,
-  check_in      date primary key not null,
-  check_out     date,
-  centre_id     number(9),
-  guest_id      number(9)
+CREATE TABLE GYM_ATTENDENCE(
+  MEMBER_ID     NUMBER(9) PRIMARY KEY NOT NULL,
+  CHECK_IN      DATE PRIMARY KEY NOT NULL,
+  CHECK_OUT     DATE,
+  CENTRE_ID     NUMBER(9),
+  GUEST_ID      NUMBER(9)
 );
 
-create table payments(
-  payment_id    number(9) primary key not null,
-  member_id     number(9) not null,
-  amount        number(6) not null,
-  payment_date  date,
-  payment_method  varchar2(25)
+CREATE TABLE PAYMENTS(
+  PAYMENT_ID    NUMBER(9) PRIMARY KEY NOT NULL,
+  MEMBER_ID     NUMBER(9) NOT NULL,
+  AMOUNT        NUMBER(6) NOT NULL,
+  PAYMENT_DATE  DATE,
+  PAYMENT_METHOD  VARCHAR2(25)
 );
 
-create table membership(
-  membership_id number(9) primary key not null,
-  plan_id       number(9) not null,
-  start_date    date,
-  end_date      date,
-  status        number(1) check (status in (0,1))
+CREATE TABLE MEMBERSHIP(
+  MEMBERSHIP_ID NUMBER(9) PRIMARY KEY NOT NULL,
+  PLAN_ID       NUMBER(9) NOT NULL,
+  START_DATE    DATE,
+  END_DATE      DATE,
+  STATUS        NUMBER(1) CHECK (STATUS IN (0,1))
 );
 
 CREATE TABLE FITNESS_CENTRE
