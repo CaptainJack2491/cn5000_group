@@ -24,6 +24,7 @@ ALTER TABLE clients_guests ADD CONSTRAINT clients_guests_pk PRIMARY KEY ( guest_
 CREATE TABLE equipment_rental (
     equipment_id         NUMBER(9) NOT NULL,
     eq_model             VARCHAR2(30),
+    price                NUMBER(4, 2),
     serial_number        NUMBER(9),
     maintenance_schedule VARCHAR2(30)
 );
@@ -74,6 +75,8 @@ ALTER TABLE health_assessments ADD CONSTRAINT health_assessments_pk PRIMARY KEY 
 CREATE TABLE invoices (
     invoice_id NUMBER(9) NOT NULL,
     payment_id VARCHAR2(30) NOT NULL,
+    promotion_id  NUMBER(9),
+    equipment_id   NUMBER(9),
     services   VARCHAR2(30)
 );
 
@@ -81,6 +84,7 @@ ALTER TABLE invoices ADD CONSTRAINT invoices_pk PRIMARY KEY ( invoice_id );
 
 CREATE TABLE members (
     member_id         NUMBER(9) NOT NULL,
+    plan_id           NUMBER(9),
     fname             VARCHAR2(25) NOT NULL,
     lname             VARCHAR2(25) NOT NULL,
     address           VARCHAR2(80),
@@ -185,6 +189,11 @@ CREATE TABLE workshops (
 
 ALTER TABLE workshops ADD CONSTRAINT workshops_pk PRIMARY KEY ( workshop_id );
 
+alter table members
+    add constraint members_membership_plans_fk foreign key ( plan_id )
+        references membership_plans ( plan_id )
+    not deferrable;
+
 alter table clients_guests
     add constraint clients_guests_members_fk foreign key ( member_id )
         references members ( member_id )
@@ -195,20 +204,34 @@ ALTER TABLE gym_attendance
         REFERENCES members ( member_id )
     NOT DEFERRABLE;
 
+
 ALTER TABLE payments
     ADD CONSTRAINT payments_members_fk FOREIGN KEY ( member_id )
         REFERENCES members ( member_id )
     NOT DEFERRABLE;
+
 
 ALTER TABLE membership
     ADD CONSTRAINT payments_members_fk FOREIGN KEY ( plan_id )
         REFERENCES membership_plans ( plan_id )
     NOT DEFERRABLE;
 
+
 ALTER TABLE invoices
-    ADD CONSTRAINT payments_members_fk FOREIGN KEY ( payment_id )
+    ADD CONSTRAINT invoice_equipment_fk FOREIGN KEY ( equipment_id )
+        REFERENCES equipment_rental ( equipment_id )
+    NOT DEFERRABLE;
+
+ALTER TABLE invoices
+    ADD CONSTRAINT invoice_payments_fk FOREIGN KEY ( payment_id )
         REFERENCES payments ( payment_id )
     NOT DEFERRABLE;
+
+ALTER TABLE invoices
+    ADD CONSTRAINT invoice_promotions_fk FOREIGN KEY ( promotion_id )
+        REFERENCES promotions ( promotion_id )
+    NOT DEFERRABLE;
+
 
 ALTER TABLE personal_training_sessions
     ADD CONSTRAINT personal_training_sessions_staff_fk FOREIGN KEY ( trainer_id )
@@ -241,6 +264,7 @@ ALTER TABLE fitness_class
         REFERENCES workout_plans ( workout_plan_id )
     NOT DEFERRABLE;
 
+
 ALTER TABLE workshops
     ADD CONSTRAINT workshops_members_fk FOREIGN KEY ( member_id )
         REFERENCES members ( member_id )
@@ -255,6 +279,7 @@ ALTER TABLE workshops
     ADD CONSTRAINT workshops_fitness_centre_fk FOREIGN KEY ( centre_id )
         REFERENCES fitness_centre ( centre_id )
     NOT DEFERRABLE;
+
 
 ALTER TABLE workout_plans
     ADD CONSTRAINT workout_plans_members_fk FOREIGN KEY ( member_id )
