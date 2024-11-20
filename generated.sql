@@ -65,7 +65,7 @@ ALTER TABLE health_assessments ADD CONSTRAINT health_assessments_pk PRIMARY KEY 
 CREATE TABLE invoices (
     invoice_id NUMBER(9) NOT NULL,
     payment_id VARCHAR2(30) NOT NULL,
-    promotion_id  NUMBER(9),
+    promotional_discount NUMBER(4, 2),
     equipment_id   NUMBER(9),
     services   VARCHAR2(30)
 );
@@ -131,13 +131,6 @@ CREATE TABLE personal_training_sessions (
 
 ALTER TABLE personal_training_sessions ADD CONSTRAINT personal_training_sessions_pk PRIMARY KEY ( session_id );
 
-CREATE TABLE promotions (
-    promotion_id NUMBER(9) NOT NULL,
-    p_type       VARCHAR2(30) NOT NULL,
-    discount     NUMBER(10, 2) NOT NULL
-);
-
-ALTER TABLE promotions ADD CONSTRAINT promotions_pk PRIMARY KEY ( promotion_id );
 
 CREATE TABLE staff (
     staff_id          NUMBER(9) NOT NULL,
