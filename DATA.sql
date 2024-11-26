@@ -56,6 +56,20 @@ INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instruc
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (7637, 'Bodyweight', 'Core Exercises', 2024-11-16 11:33:30.051651, 4465, 30);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (9129, 'Cardio', 'Balance Training', 2024-11-11 13:56:37.531359, 4809, 13);
 
+
+-- FITNESS CLASSES NEW
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (7219, 'Outdoor', 'Strength Training', to_date('2024-11-07 18:26:47.066724', 'YYYY-MM-DD HH24:MI:SS'), 3611, 15);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (4802, 'Cardio', 'Strength Training', to_date('2024-11-03 08:59:32.652000', 'YYYY-MM-DD HH24:MI:SS'), 1382, 30);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (6091, 'HIIT', 'Core Exercises', to_date('2024-11-03 14:57:53.930791', 'YYYY-MM-DD HH24:MI:SS'), 3890, 13);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (9652, 'AMRAP', 'Aerobic Fitness', to_date('2024-11-05 18:09:03.585725', 'YYYY-MM-DD HH24:MI:SS'), 2093, 22);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (8841, 'Bodyweight', 'Balance Training', to_date('2024-11-06 00:44:08.964599', 'YYYY-MM-DD HH24:MI:SS'), 3890, 21);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (7372, 'Cardio', 'Balance Training', to_date('2024-11-16 01:36:54.515321', 'YYYY-MM-DD HH24:MI:SS'), 6986, 30);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (6807, 'HIIT', 'Flexibility and Stretching', to_date('2024-11-03 15:07:13.735764', 'YYYY-MM-DD HH24:MI:SS'), 3611, 25);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (8575, 'HIIT', 'Flexibility and Stretching', to_date('2024-11-03 21:38:35.728503', 'YYYY-MM-DD HH24:MI:SS'), 3474, 29);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (9339, 'Outdoor', 'Aerobic Fitness', to_date('2024-11-24 01:44:18.636239', 'YYYY-MM-DD HH24:MI:SS'), 1382, 15);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Max_Capacity) VALUES (2479, 'Outdoor', 'Strength Training', to_date('2024-11-23 23:30:14.003187', 'YYYY-MM-DD HH24:MI:SS'), 8303, 19);
+
+
 -- MEMBERSHIP
 
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3350, 8346, 'Gold', 2024-02-12, 2024-11-28, 'Active', 442.4);
