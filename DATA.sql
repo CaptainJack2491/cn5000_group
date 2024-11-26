@@ -76,10 +76,10 @@ INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Dat
 
 -- DISCOUNTS
 
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (8232, 'Diwali Promotion', 'DIWALI2025', 0, 0.0);
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (4896, 'New Year Promotion', 'NEWYEAR2025', 0, 0.0);
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (7207, 'Christmas Promotion', 'CHRISTMAS2024', 0, 0.0);
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (2995, 'Summer Promotion', 'SUMMER2025', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (8232, 'Promotion', 'DIWALI2025', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (4896, 'Promotion', 'NEWYEAR2025', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (7207, 'Promotion', 'CHRISTMAS2024', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (2995, 'Promotion', 'SUMMER2025', 0, 0.0);
 
 -- Personal_Training_Sessions
 
