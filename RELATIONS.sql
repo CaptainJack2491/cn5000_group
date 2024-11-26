@@ -18,14 +18,14 @@ ALTER TABLE Class_Bookings
     ADD CONSTRAINT FK_Booking_Client FOREIGN KEY (Client_ID)
     REFERENCES Clients(Client_ID);
 
--- Foreign Key for Training.Client_ID → Clients.Client_ID
-ALTER TABLE Training
-    ADD CONSTRAINT FK_Training_Client FOREIGN KEY (Client_ID)
+-- Foreign Key for Personal_training_Sessions.Client_ID → Clients.Client_ID
+ALTER TABLE Personal_training_Sessions
+    ADD CONSTRAINT FK_Personal_training_Sessions_Client FOREIGN KEY (Client_ID)
     REFERENCES Clients(Client_ID);
 
--- Foreign Key for Training.Trainer_ID → Staff.Staff_ID
-ALTER TABLE Training
-    ADD CONSTRAINT FK_Training_Trainer FOREIGN KEY (Trainer_ID)
+-- Foreign Key for Personal_training_Sessions.Trainer_ID → Staff.Staff_ID
+ALTER TABLE Personal_training_Sessions
+    ADD CONSTRAINT FK_Personal_training_Sessions_Trainer FOREIGN KEY (Trainer_ID)
     REFERENCES Staff(Staff_ID);
 
 -- Foreign Key for Health_Assessments.Client_ID → Clients.Client_ID
