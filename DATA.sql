@@ -142,18 +142,16 @@ INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment
 
 -- GYM ATTENDANCE
 
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (7556, 6019, to_timestamp('2024-11-17 10:58:06.256762', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-08 21:54:57.804243', 'YYYY-MM-DD HH24:MI:SS:FF'), 3317);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (2555, 6079, to_timestamp('2024-11-12 16:27:56.106181', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-03 20:32:42.535105', 'YYYY-MM-DD HH24:MI:SS:FF'), 8196);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1109, 4281, to_timestamp('2024-11-02 00:27:09.510413', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-09 05:22:50.755512', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (2961, 6019, to_timestamp('2024-11-02 05:55:08.228431', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-16 04:05:39.993567', 'YYYY-MM-DD HH24:MI:SS:FF'), 4770);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (8724, 6108, to_timestamp('2024-11-05 02:20:39.220176', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-04 21:06:28.339086', 'YYYY-MM-DD HH24:MI:SS:FF'), 3317);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (8517, 5210, to_timestamp('2024-11-19 07:33:16.296696', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-24 04:55:13.619340', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1817, 6154, to_timestamp('2024-11-21 11:31:43.807801', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-18 09:52:44.837924', 'YYYY-MM-DD HH24:MI:SS:FF'), 8196);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (3402, 4281, to_timestamp('2024-11-17 18:03:49.815275', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-08 08:14:43.707832', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (9870, 6108, to_timestamp('2024-11-22 18:00:21.729636', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-21 20:39:47.778137', 'YYYY-MM-DD HH24:MI:SS:FF'), 3468);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1682, 5294, to_timestamp('2024-11-09 19:37:26.840638', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-06 07:35:55.654264', 'YYYY-MM-DD HH24:MI:SS:FF'), 4770);
-
-
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (7556, 6019, to_timestamp('2024-11-17 10:58:06.256762', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:54:57.804243', 'YYYY-MM-DD HH24:MI:SS:FF'), 3317);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (2555, 6079, to_timestamp('2024-11-12 16:27:56.106181', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-15 20:32:42.535105', 'YYYY-MM-DD HH24:MI:SS:FF'), 8196);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1109, 4281, to_timestamp('2024-11-02 00:27:09.510413', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-02 16:22:50.755512', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (2961, 6019, to_timestamp('2024-11-02 05:55:08.228431', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-02 07:05:39.993567', 'YYYY-MM-DD HH24:MI:SS:FF'), 4770);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (8724, 6108, to_timestamp('2024-11-05 06:20:39.220176', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-05 09:06:28.339086', 'YYYY-MM-DD HH24:MI:SS:FF'), 3317);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (8517, 5210, to_timestamp('2024-11-19 07:33:16.296696', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-19 11:55:13.619340', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1817, 6154, to_timestamp('2024-11-21 11:31:43.807801', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-21 14:52:44.837924', 'YYYY-MM-DD HH24:MI:SS:FF'), 8196);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (3402, 4281, to_timestamp('2024-11-17 18:03:49.815275', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:14:43.707832', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (9870, 6108, to_timestamp('2024-11-22 18:00:21.729636', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-22 20:39:47.778137', 'YYYY-MM-DD HH24:MI:SS:FF'), 3468);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1682, 5294, to_timestamp('2024-11-09 19:37:26.840638', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-09 21:35:55.654264', 'YYYY-MM-DD HH24:MI:SS:FF'), 4770);
 -- EQUIPMENT RENTALS
 
 INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (3277, 4685, 333, 'Barbells', 3204, to_date('2024-03-07', 'YYYY-MM-DD'), to_date('2024-08-19', 'YYYY-MM-DD'), to_date('2024-03-21', 'YYYY-MM-DD'));
