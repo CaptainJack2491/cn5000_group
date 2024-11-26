@@ -22,7 +22,7 @@
    
    1. set one of the members' expiry date and time at the time of the presentation to make it sexier!
       1. (All the memberships end at 11:20 in the morning!)
-   2. set spots for all the classes and decrease as the spaces are booked.
+   2. Rename **"Max_Capacity" to "Available_Spots"** for all the classes and decrease as the spaces are booked.
    3. How to do this? 
       1. set a specific time before when the notifications go to the members.
       2. set the notifications every day around the time the member visits the gym.
