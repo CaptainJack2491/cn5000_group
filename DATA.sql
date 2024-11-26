@@ -196,6 +196,21 @@ INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_
 INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (2557, 6094, 539, 'Barbells', 8346, 2024-03-07, 2024-03-19, 2025-08-23);
 INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (5246, 4831, 789, 'Pull-up Bars', 6056, 2024-10-26, 2024-11-29, 2025-08-07);
 
+
+-- RENTALS NEWS
+
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (3277, 4685, 333, 'Barbells', 3204, to_date('2024-03-07', 'YYYY-MM-DD'), to_date('2024-08-19', 'YYYY-MM-DD'), to_date('2024-03-21', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (6048, 2417, 359, 'Treadmill', 2019, to_date('2024-08-23', 'YYYY-MM-DD'), to_date('2024-05-12', 'YYYY-MM-DD'), to_date('2024-11-07', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (4167, 4685, 120, 'Treadmill', 9215, to_date('2024-10-15', 'YYYY-MM-DD'), to_date('2024-08-27', 'YYYY-MM-DD'), to_date('2024-02-13', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (7490, 1920, 937, 'Dumbbells', 9244, to_date('2024-07-05', 'YYYY-MM-DD'), to_date('2024-03-30', 'YYYY-MM-DD'), to_date('2024-04-10', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (4038, 4941, 431, 'Exercise Bike', 2019, to_date('2024-07-27', 'YYYY-MM-DD'), to_date('2024-11-07', 'YYYY-MM-DD'), to_date('2024-09-09', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (9829, 1920, 211, 'Pull-up Bars', 6573, to_date('2024-08-23', 'YYYY-MM-DD'), to_date('2024-03-12', 'YYYY-MM-DD'), to_date('2024-01-21', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (6027, 1920, 508, 'Medicine Balls', 4792, to_date('2024-03-24', 'YYYY-MM-DD'), to_date('2024-02-22', 'YYYY-MM-DD'), to_date('2024-08-04', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (7858, 4685, 223, 'Medicine Balls', 3204, to_date('2024-11-06', 'YYYY-MM-DD'), to_date('2024-02-12', 'YYYY-MM-DD'), to_date('2024-08-20', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (6751, 4941, 966, 'Barbells', 3325, to_date('2024-02-08', 'YYYY-MM-DD'), to_date('2024-11-08', 'YYYY-MM-DD'), to_date('2024-10-31', 'YYYY-MM-DD'));
+INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (4976, 1920, 683, 'Exercise Bike', 2019, to_date('2024-01-01', 'YYYY-MM-DD'), to_date('2024-11-07', 'YYYY-MM-DD'), to_date('2024-08-26', 'YYYY-MM-DD'));
+
+
 -- CLASS BOOKINGS
 
 INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (9038, 7311, 8054, 'Waitlisted');
