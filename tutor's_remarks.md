@@ -20,7 +20,7 @@
    
 6. Trigger & Store Procedure.
    
-   1. set one of the members' expiry date and time at the time of the presentation to make it sexier!
+   1. set one of the m;embers' expiry date and time at the time of the presentation to make it sexier!
       1. (All the memberships end at 11:20 in the morning!)
    2. Rename **"Max_Capacity" to "Available_Spots"** for all the classes and decrease as the spaces are booked.
    3. How to do this? 
