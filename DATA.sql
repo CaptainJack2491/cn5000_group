@@ -45,19 +45,6 @@ INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (6
 
 -- FITNESS CLASSES
 
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (7133, 'AMRAP', 'Strength Training', 2024-11-15 13:50:40.185346, 2566, 20);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (7425, 'HIIT', 'Strength Training', 2024-11-02 07:08:31.331759, 2235, 19);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (9167, 'Bodyweight', 'Core Exercises', 2024-11-06 01:29:52.499739, 6369, 15);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (3990, 'Bodyweight', 'Core Exercises', 2024-11-25 19:16:43.517413, 6369, 22);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (9232, 'AMRAP', 'Core Exercises', 2024-11-09 18:45:49.526643, 2235, 17);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (5972, 'Bodyweight', 'Strength Training', 2024-11-04 10:44:54.884069, 2566, 25);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (5995, 'TRX', 'Strength Training', 2024-11-18 09:24:29.094006, 2688, 13);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (6383, 'Cardio', 'Flexibility and Stretching', 2024-11-09 23:28:07.125901, 4465, 26);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (7637, 'Bodyweight', 'Core Exercises', 2024-11-16 11:33:30.051651, 4465, 30);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (9129, 'Cardio', 'Balance Training', 2024-11-11 13:56:37.531359, 4809, 13);
-
-
--- FITNESS CLASSES NEW
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (8323, 'HIIT', 'Aerobic Fitness', to_timestamp('2024-11-20 16:55:28.290814', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 12);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (1308, 'Outdoor', 'Core Exercises', to_timestamp('2024-11-15 04:26:20.828879', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 11);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (6933, 'AMRAP', 'Balance Training', to_timestamp('2024-11-17 18:43:02.687510', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 30);
@@ -69,40 +56,24 @@ INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instruc
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (8941, 'TRX', 'Aerobic Fitness', to_timestamp('2024-11-10 09:47:19.652765', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 21);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (3109, 'AMRAP', 'Strength Training', to_timestamp('2024-11-22 05:42:07.748604', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 11);
 
+
 -- MEMBERSHIP
 
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3350, 8346, 'Gold', 2024-02-12, 2024-11-28, 'Active', 442.4);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (5879, 7175, 'Gold', 2024-07-20, 2025-06-28, 'Active', 277.76);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (4169, 8924, 'Silver', 2024-04-21, 2024-12-14, 'Active', 446.38);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8223, 8924, 'Silver', 2024-10-06, 2025-08-14, 'Active', 460.09);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3407, 5093, 'Silver', 2024-10-06, 2025-03-01, 'Active', 306.85);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8537, 9309, 'Silver', 2024-03-18, 2025-02-20, 'Active', 372.43);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (5308, 1489, 'Platinum', 2024-02-19, 2024-04-15, 'Inactive', 376.93);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3376, 6932, 'Platinum', 2024-05-20, 2025-01-21, 'Active', 309.59);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7533, 6932, 'Platinum', 2024-09-10, 2025-06-18, 'Active', 351.01);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (2732, 2512, 'Platinum', 2024-02-21, 2024-05-12, 'Inactive', 251.83);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9008, 7484, 'Silver', 2024-01-20, 2024-03-04, 'Inactive', 453.49);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7815, 6932, 'Gold', 2024-05-25, 2024-10-17, 'Inactive', 284.33);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9945, 8924, 'Silver', 2024-09-22, 2025-07-23, 'Active', 257.33);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8288, 8924, 'Platinum', 2024-03-07, 2024-04-07, 'Inactive', 100.99);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9330, 8346, 'Gold', 2024-03-28, 2024-11-29, 'Active', 434.16);
-
--- Membership new
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (2706, 4338, 'Platinum', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-01-23', 'YYYY-MM-DD'), 'Active', 342.78);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9291, 6685, 'Gold', to_date('2024-05-19', 'YYYY-MM-DD'), to_date('2025-03-27', 'YYYY-MM-DD'), 'Active', 363.65);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7150, 7535, 'Gold', to_date('2024-10-13', 'YYYY-MM-DD'), to_date('2025-04-18', 'YYYY-MM-DD'), 'Active', 450.11);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9527, 6617, 'Silver', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-05-08', 'YYYY-MM-DD'), 'Active', 434.75);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9045, 8108, 'Silver', to_date('2024-01-12', 'YYYY-MM-DD'), to_date('2024-12-18', 'YYYY-MM-DD'), 'Active', 252.37);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8493, 4338, 'Platinum', to_date('2024-05-03', 'YYYY-MM-DD'), to_date('2024-12-20', 'YYYY-MM-DD'), 'Active', 230.82);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8683, 7575, 'Platinum', to_date('2024-09-01', 'YYYY-MM-DD'), to_date('2025-03-10', 'YYYY-MM-DD'), 'Active', 342.13);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (6479, 6685, 'Gold', to_date('2024-10-19', 'YYYY-MM-DD'), to_date('2025-07-20', 'YYYY-MM-DD'), 'Active', 79.48);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (4726, 9019, 'Gold', to_date('2024-02-24', 'YYYY-MM-DD'), to_date('2024-07-15', 'YYYY-MM-DD'), 'Inactive', 248.44);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7824, 8284, 'Platinum', to_date('2024-08-08', 'YYYY-MM-DD'), to_date('2025-03-26', 'YYYY-MM-DD'), 'Active', 53.13);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (1972, 9626, 'Gold', to_date('2024-01-16', 'YYYY-MM-DD'), to_date('2024-08-08', 'YYYY-MM-DD'), 'Inactive', 490.04);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8332, 3465, 'Gold', to_date('2024-03-17', 'YYYY-MM-DD'), to_date('2024-08-17', 'YYYY-MM-DD'), 'Inactive', 62.47);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7168, 8888, 'Silver', to_date('2024-04-22', 'YYYY-MM-DD'), to_date('2024-10-17', 'YYYY-MM-DD'), 'Inactive', 491.67);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7993, 9019, 'Platinum', to_date('2024-05-01', 'YYYY-MM-DD'), to_date('2025-01-21', 'YYYY-MM-DD'), 'Active', 355.72);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3965, 5383, 'Gold', to_date('2024-04-02', 'YYYY-MM-DD'), to_date('2025-03-25', 'YYYY-MM-DD'), 'Active', 254.81);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (2706, 4338, 'Platinum', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-05-10', 'YYYY-MM-DD'), 'Active', 342.78);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9291, 6685, 'Gold', to_date('2024-05-19', 'YYYY-MM-DD'), to_date('2024-11-19', 'YYYY-MM-DD'), 'Active', 363.65);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7150, 7535, 'Gold', to_date('2024-10-13', 'YYYY-MM-DD'), to_date('2025-04-13', 'YYYY-MM-DD'), 'Active', 450.11);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9527, 6617, 'Silver', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-07-08', 'YYYY-MM-DD'), 'Active', 434.75);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9045, 8108, 'Silver', to_date('2024-01-12', 'YYYY-MM-DD'), to_date('2024-3-18', 'YYYY-MM-DD'), 'Active', 252.37);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8493, 4338, 'Platinum', to_date('2024-05-03', 'YYYY-MM-DD'), to_date('2024-5-20', 'YYYY-MM-DD'), 'Active', 230.82);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8683, 7575, 'Platinum', to_date('2024-09-01', 'YYYY-MM-DD'), to_date('2025-09-10', 'YYYY-MM-DD'), 'Active', 342.13);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (6479, 6685, 'Gold', to_date('2024-10-19', 'YYYY-MM-DD'), to_date('2025-04-20', 'YYYY-MM-DD'), 'Active', 79.48);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (4726, 9019, 'Gold', to_date('2024-02-24', 'YYYY-MM-DD'), to_date('2024-08-15', 'YYYY-MM-DD'), 'Inactive', 248.44);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7824, 8284, 'Platinum', to_date('2024-08-08', 'YYYY-MM-DD'), to_date('2025-08-26', 'YYYY-MM-DD'), 'Active', 53.13);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (1972, 9626, 'Gold', to_date('2024-01-16', 'YYYY-MM-DD'), to_date('2024-06-08', 'YYYY-MM-DD'), 'Inactive', 490.04);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8332, 3465, 'Gold', to_date('2024-03-17', 'YYYY-MM-DD'), to_date('2024-09-17', 'YYYY-MM-DD'), 'Inactive', 62.47);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7168, 8888, 'Silver', to_date('2024-04-22', 'YYYY-MM-DD'), to_date('2024-7-17', 'YYYY-MM-DD'), 'Inactive', 491.67);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7993, 9019, 'Platinum', to_date('2024-08-01', 'YYYY-MM-DD'), to_date('2025-08-21', 'YYYY-MM-DD'), 'Active', 355.72);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3965, 5383, 'Gold', to_date('2024-04-02', 'YYYY-MM-DD'), to_date('2025-10-25', 'YYYY-MM-DD'), 'Active', 254.81);
 
 -- DISCOUNTS
 
@@ -113,24 +84,6 @@ INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, R
 
 -- Personal_Training_Sessions
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (4160, 7548, 5884, 2024-10-06 08:26:19.371039, 'Inventore blanditiis veniam laborum dolores repellat. Tempore aperiam iusto repellat adipisci.
-Perferendis est similique sapiente ipsa eius. Doloremque magni sapiente nesciunt.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (5787, 6056, 5884, 2024-02-02 04:31:28.940516, 'Porro consequatur dolore doloremque eveniet consectetur. Nulla ad alias repellendus.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (1810, 3483, 2235, 2024-09-27 17:07:43.451183, 'Provident sint tempora maiores nam aliquam est. Dolore reiciendis explicabo quidem accusamus ullam qui ut.
-Error voluptatibus ullam corporis excepturi esse blanditiis.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (4917, 3483, 6369, 2024-01-16 19:50:11.078377, 'Sed sed quod animi. Neque tempora tempora quis et iste.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (8184, 1987, 2688, 2024-09-03 23:45:02.549771, 'Ipsum doloribus nam id. Officiis sequi soluta eius quisquam.
-Aliquam totam numquam ratione.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (8750, 7548, 2878, 2024-07-23 06:01:22.345548, 'Recusandae quasi perferendis sint. Perferendis nam deserunt. Fugiat laudantium facere eveniet.
-Excepturi maiores placeat dolore. Alias incidunt nisi soluta maxime. Quo explicabo aperiam rerum.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (5753, 1489, 4809, 2024-02-19 03:27:35.152006, 'Quia blanditiis recusandae quis. Molestias architecto optio enim id iusto. Incidunt nisi voluptatem quisquam aliquid cupiditate iste.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (2348, 5422, 2336, 2024-05-29 10:30:59.658912, 'Vero ducimus illum labore veritatis dolorum ipsam. Sequi aut illo temporibus. A incidunt voluptatem expedita tempore occaecati earum.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (8702, 2860, 2336, 2024-01-21 05:17:05.909359, 'Aperiam voluptatibus numquam corrupti. Amet ratione id in dolorum. Repudiandae iure voluptatibus a doloribus optio.
-Commodi ipsa veniam facilis. Possimus in voluptatibus tempore.');
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (3852, 7175, 2336, 2024-10-17 05:45:58.464891, 'Non eum iste nesciunt voluptates non deleniti. Quo quaerat recusandae ipsam alias deleniti. Animi deleniti quod modi officia nulla ipsa.');
-
-
--- PERSONAL TRAINING SESSIONS NEW
 INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (1281, 9153, 7857, to_timestamp('2024-11-11 14:51:03.883603', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Corporis modi explicabo enim reiciendis illum ipsam. Numquam sint neque repellat quam.
 Repellat rerum ipsa.');
 INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (2882, 4811, 3729, to_timestamp('2024-11-02 06:16:37.431314', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Provident delectus dolore nulla. Est labore optio magni labore exercitationem alias. Incidunt eum ab magni asperiores hic sed.
@@ -146,18 +99,6 @@ INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Sess
 
 -- HEALTH ASSESSMENTS
 
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (8274, 7939, 5884, 2024-06-02 08:43:48.823206, 61.58, 21.9, 36.96);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (1616, 2512, 2878, 2024-05-19 00:30:45.232307, 60.24, 18.51, 26.51);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (3157, 5422, 2878, 2024-11-05 05:06:06.611510, 96.83, 20.18, 29.99);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (1364, 6056, 2878, 2024-04-10 02:32:00.684172, 53.16, 27.77, 39.94);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (4848, 8368, 2235, 2024-08-15 00:47:18.089684, 50.84, 25.25, 26.16);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (6142, 1489, 4465, 2024-04-19 08:25:42.502255, 98.32, 20.44, 23.8);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (1672, 8781, 2878, 2024-08-31 18:15:44.605034, 92.74, 20.54, 39.94);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (9992, 5422, 2878, 2024-04-30 06:39:58.925036, 80.45, 26.93, 15.3);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (6930, 7548, 9666, 2024-02-15 20:07:24.768199, 70.54, 25.95, 27.65);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (3670, 7175, 9666, 2024-10-23 19:52:10.695355, 95.72, 21.54, 18.38);
-
---NEW HEALTH ASSESSMENTS
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (9773, 6128, 8878, to_timestamp('2024-02-20 13:10:56.384739', 'YYYY-MM-DD HH24:MI:SS:FF'), 82.41, 29.16, 36.9);
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (8715, 1983, 5308, to_timestamp('2024-03-06 22:54:28.064248', 'YYYY-MM-DD HH24:MI:SS:FF'), 77.06, 22.54, 27.0);
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (7028, 8967, 5308, to_timestamp('2024-04-17 12:49:50.370394', 'YYYY-MM-DD HH24:MI:SS:FF'), 72.27, 19.14, 25.7);
@@ -172,18 +113,6 @@ INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment
 
 -- GYM ATTENDANCE
 
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (6926, 8781, 2024-11-22 07:02:57.435897, 2024-11-22 09:20:53.440330, 7885);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (9200, 6932, 2024-11-19 13:38:41.727280, 2024-11-19 14:10:47.241966, 7885);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1474, 3483, 2024-11-22 11:46:56.888915, 2024-11-22 16:22:37.918728, 7885);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (7489, 5093, 2024-11-05 10:26:16.862931, 2024-11-05 16:10:35.870010, 6771);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (5675, 8924, 2024-11-20 14:43:49.943554, 2024-11-20 23:12:27.596241, 4831);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (2100, 3483, 2024-11-06 09:19:14.789033, 2024-11-06 11:18:34.897298, 6771);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (9147, 6932, 2024-11-22 03:51:27.429627, 2024-11-22 05:16:51.440503, 7885);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (5180, 5093, 2024-11-01 04:52:15.500492, 2024-11-01 08:40:06.040502, 6094);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (4998, 8346, 2024-11-04 04:57:25.899846, 2024-11-04 10:14:59.571233, 4831);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (6797, 8368, 2024-11-09 01:26:25.559764, 2024-11-09 04:53:27.508097, 6428);
-
--- GYM ATTENDANCE NEW
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (7556, 6019, to_timestamp('2024-11-17 10:58:06.256762', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-08 21:54:57.804243', 'YYYY-MM-DD HH24:MI:SS:FF'), 3317);
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (2555, 6079, to_timestamp('2024-11-12 16:27:56.106181', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-03 20:32:42.535105', 'YYYY-MM-DD HH24:MI:SS:FF'), 8196);
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1109, 4281, to_timestamp('2024-11-02 00:27:09.510413', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-09 05:22:50.755512', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
@@ -197,20 +126,6 @@ INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facil
 
 
 -- EQUIPMENT RENTALS
-
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (5234, 6771, 284, 'Dumbbells', 8781, 2024-05-14, 2024-05-23, 2025-03-26);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (8904, 7885, 886, 'Barbells', 7175, 2024-11-23, 2024-11-25, 2025-06-29);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (2964, 6428, 461, 'Pull-up Bars', 5422, 2024-03-26, 2024-03-31, 2025-09-14);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (4356, 6094, 733, 'Resistance Bands', 6056, 2024-09-22, 2024-09-27, 2025-01-13);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (8126, 7885, 750, 'Medicine Balls', 8346, 2024-07-25, 2024-08-11, 2025-02-16);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (6566, 6428, 698, 'Treadmill', 9309, 2024-10-17, 2024-10-18, 2025-10-18);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (9910, 6094, 369, 'Barbells', 6932, 2024-09-05, 2024-09-24, 2025-11-23);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (5892, 6094, 405, 'Elliptical', 8368, 2024-04-26, 2024-04-27, 2025-03-22);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (2557, 6094, 539, 'Barbells', 8346, 2024-03-07, 2024-03-19, 2025-08-23);
-INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (5246, 4831, 789, 'Pull-up Bars', 6056, 2024-10-26, 2024-11-29, 2025-08-07);
-
-
--- RENTALS NEWS
 
 INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (3277, 4685, 333, 'Barbells', 3204, to_date('2024-03-07', 'YYYY-MM-DD'), to_date('2024-08-19', 'YYYY-MM-DD'), to_date('2024-03-21', 'YYYY-MM-DD'));
 INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (6048, 2417, 359, 'Treadmill', 2019, to_date('2024-08-23', 'YYYY-MM-DD'), to_date('2024-05-12', 'YYYY-MM-DD'), to_date('2024-11-07', 'YYYY-MM-DD'));
