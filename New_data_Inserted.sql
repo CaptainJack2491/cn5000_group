@@ -15,8 +15,7 @@ INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Dat
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7993, 9019, 'Platinum', to_date('2024-08-01', 'YYYY-MM-DD'), to_date('2025-08-21', 'YYYY-MM-DD'), 'Active', 355.72);
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3965, 5383, 'Gold', to_date('2024-04-02', 'YYYY-MM-DD'), to_date('2025-10-25', 'YYYY-MM-DD'), 'Active', 254.81);
 
-
-
+--Fitness_Classes
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (8323, 'HIIT', 'Aerobic Fitness', to_timestamp('2024-11-20 16:55:28.290814', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 12);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (1308, 'Outdoor', 'Core Exercises', to_timestamp('2024-11-15 04:26:20.828879', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 11);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (6933, 'AMRAP', 'Balance Training', to_timestamp('2024-11-17 18:43:02.687510', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 30);
@@ -27,10 +26,6 @@ INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instruc
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (4778, 'Outdoor', 'Aerobic Fitness', to_timestamp('2024-11-17 19:58:01.738331', 'YYYY-MM-DD HH24:MI:SS:FF'), 3400, 22);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (8941, 'TRX', 'Aerobic Fitness', to_timestamp('2024-11-10 09:47:19.652765', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 21);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (3109, 'AMRAP', 'Strength Training', to_timestamp('2024-11-22 05:42:07.748604', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 11);
-
-
-
-
 
 -- PERSONAL TRAINING SESSIONS NEW
 INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (1281, 9153, 7857, to_timestamp('2024-11-11 14:51:03.883603', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Corporis modi explicabo enim reiciendis illum ipsam. Numquam sint neque repellat quam.
@@ -46,8 +41,6 @@ INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Sess
 INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (5845, 2071, 7857, to_timestamp('2024-11-12 18:25:18.753276', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Officiis iure distinctio autem voluptates sequi voluptatibus magni. Dolorem earum ipsa. Quod soluta iusto consequuntur quis quibusdam laboriosam.');
 INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (1352, 2697, 1987, to_timestamp('2024-11-10 12:48:38.755188', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Est architecto odio. Amet iusto doloremque qui quasi. Alias in ad praesentium ratione suscipit recusandae. Maxime dolor occaecati adipisci quibusdam.');
 
-
-
 --NEW HEALTH ASSESSMENTS
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (9773, 6128, 8878, to_timestamp('2024-02-20 13:10:56.384739', 'YYYY-MM-DD HH24:MI:SS:FF'), 82.41, 29.16, 36.9);
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (8715, 1983, 5308, to_timestamp('2024-03-06 12:54:28.064248', 'YYYY-MM-DD HH24:MI:SS:FF'), 77.06, 22.54, 27.0);
@@ -60,9 +53,7 @@ INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (7647, 7042, 2531, to_timestamp('2024-01-22 17:52:34.653641', 'YYYY-MM-DD HH24:MI:SS:FF'), 65.83, 24.53, 18.26);
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (4771, 8967, 6195, to_timestamp('2024-08-15 15:31:37.468016', 'YYYY-MM-DD HH24:MI:SS:FF'), 54.94, 26.67, 37.5);
 
-
-
-
+--Gym Attendance
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (7556, 6019, to_timestamp('2024-11-17 10:58:06.256762', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:54:57.804243', 'YYYY-MM-DD HH24:MI:SS:FF'), 3317);
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (2555, 6079, to_timestamp('2024-11-12 16:27:56.106181', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-15 20:32:42.535105', 'YYYY-MM-DD HH24:MI:SS:FF'), 8196);
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1109, 4281, to_timestamp('2024-11-02 00:27:09.510413', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-02 16:22:50.755512', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
