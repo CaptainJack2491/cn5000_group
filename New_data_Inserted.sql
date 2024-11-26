@@ -73,3 +73,4 @@ INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facil
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (3402, 4281, to_timestamp('2024-11-17 18:03:49.815275', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:14:43.707832', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (9870, 6108, to_timestamp('2024-11-22 18:00:21.729636', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-22 20:39:47.778137', 'YYYY-MM-DD HH24:MI:SS:FF'), 3468);
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1682, 5294, to_timestamp('2024-11-09 19:37:26.840638', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-09 21:35:55.654264', 'YYYY-MM-DD HH24:MI:SS:FF'), 4770);
+
