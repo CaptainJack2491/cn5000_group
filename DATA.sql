@@ -157,6 +157,19 @@ INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (6930, 7548, 9666, 2024-02-15 20:07:24.768199, 70.54, 25.95, 27.65);
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (3670, 7175, 9666, 2024-10-23 19:52:10.695355, 95.72, 21.54, 18.38);
 
+--NEW HEALTH ASSESSMENTS
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (9773, 6128, 8878, to_timestamp('2024-02-20 13:10:56.384739', 'YYYY-MM-DD HH24:MI:SS:FF'), 82.41, 29.16, 36.9);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (8715, 1983, 5308, to_timestamp('2024-03-06 22:54:28.064248', 'YYYY-MM-DD HH24:MI:SS:FF'), 77.06, 22.54, 27.0);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (7028, 8967, 5308, to_timestamp('2024-04-17 12:49:50.370394', 'YYYY-MM-DD HH24:MI:SS:FF'), 72.27, 19.14, 25.7);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (7383, 9511, 6195, to_timestamp('2024-01-25 10:53:39.043383', 'YYYY-MM-DD HH24:MI:SS:FF'), 70.51, 24.05, 11.68);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (1600, 8967, 8878, to_timestamp('2024-11-01 20:42:08.104667', 'YYYY-MM-DD HH24:MI:SS:FF'), 76.41, 22.12, 19.24);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (5053, 1431, 9059, to_timestamp('2024-09-06 18:44:41.331434', 'YYYY-MM-DD HH24:MI:SS:FF'), 56.63, 21.1, 28.26);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (5274, 9726, 8912, to_timestamp('2024-11-04 08:47:27.612969', 'YYYY-MM-DD HH24:MI:SS:FF'), 89.99, 26.25, 26.62);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (3535, 5488, 5506, to_timestamp('2024-04-01 09:12:11.560210', 'YYYY-MM-DD HH24:MI:SS:FF'), 66.04, 27.04, 13.73);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (7647, 7042, 2531, to_timestamp('2024-01-22 17:52:34.653641', 'YYYY-MM-DD HH24:MI:SS:FF'), 65.83, 24.53, 18.26);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (4771, 8967, 6195, to_timestamp('2024-08-15 15:31:37.468016', 'YYYY-MM-DD HH24:MI:SS:FF'), 54.94, 26.67, 37.5);
+
+
 -- GYM ATTENDANCE
 
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (6926, 8781, 2024-11-22 07:02:57.435897, 2024-11-22 09:20:53.440330, 7885);
