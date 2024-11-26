@@ -76,12 +76,14 @@ INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Dat
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7993, 9019, 'Platinum', to_date('2024-08-01', 'YYYY-MM-DD'), to_date('2025-08-21', 'YYYY-MM-DD'), 'Active', 355.72);
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3965, 5383, 'Gold', to_date('2024-04-02', 'YYYY-MM-DD'), to_date('2025-10-25', 'YYYY-MM-DD'), 'Active', 254.81);
 
+
 -- DISCOUNTS
 
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (8232, 'Promotion', 'DIWALI2025', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (8232, 'Referral', 'REFERME20', 0, 0.0);
 INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (4896, 'Promotion', 'NEWYEAR2025', 0, 0.0);
 INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (7207, 'Promotion', 'CHRISTMAS2024', 0, 0.0);
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (2995, 'Promotion', 'SUMMER2025', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (2995, 'Promotion', 'DIWALI2025', 0, 0.0);
+
 
 -- Personal_Training_Sessions
 
