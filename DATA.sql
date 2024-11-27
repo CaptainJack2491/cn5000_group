@@ -94,6 +94,17 @@ INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Sess
 INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100009, 00000017, 00000700, TO_TIMESTAMP('2024-11-12 18:25:18.753276', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Strength Training');
 INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100010, 00000019, 00000800, TO_TIMESTAMP('2024-11-10 22:48:38.755188', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Calisthenics');
 
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100001, 00000001, 00000400, TO_TIMESTAMP('2024-11-11 14:51:03.883603', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Calisthenics');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100002, 00000004, 00000600, TO_TIMESTAMP('2024-11-02 06:16:37.431314', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Cardio');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100003, 00000005, 00000700, TO_TIMESTAMP('2024-11-02 07:57:03.590898', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Strength Training');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100004, 00000007, 00000800, TO_TIMESTAMP('2024-11-15 01:38:39.756307', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Calisthenics');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100005, 00000011, 00000900, TO_TIMESTAMP('2024-11-03 06:52:34.408842', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Cardio');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100006, 00000012, 00001000, TO_TIMESTAMP('2024-11-19 22:50:02.062975', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Strength Training');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100007, 00000014, 00000400, TO_TIMESTAMP('2024-11-24 17:58:40.590574', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Calisthenics');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100008, 00000015, 00000600, TO_TIMESTAMP('2024-11-12 00:50:31.533478', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Cardio');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100009, 00000017, 00000700, TO_TIMESTAMP('2024-11-12 18:25:18.753276', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Strength Training');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Exercise_Type) VALUES (00100010, 00000019, 00000800, TO_TIMESTAMP('2024-11-10 22:48:38.755188', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Calisthenics');
+
 -- HEALTH ASSESSMENTS
 
 INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010010, 00000001, 00000400, to_timestamp('2024-02-20 13:10:56.384739', 'YYYY-MM-DD HH24:MI:SS:FF'), 82.41, 29.16, 36.9);
