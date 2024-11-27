@@ -46,16 +46,16 @@ INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (0
 
 -- FITNESS CLASSES
 
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (01000000, 'HIIT', 'Aerobic Fitness', to_timestamp('2024-11-20 16:55:28.290814', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 12);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (02000000, 'Outdoor', 'Core Exercises', to_timestamp('2024-11-15 04:26:20.828879', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 11);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (03000000, 'AMRAP', 'Balance Training', to_timestamp('2024-11-17 18:43:02.687510', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 30);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (04000000, 'Outdoor', 'Flexibility and Stretching', to_timestamp('2024-11-01 02:11:39.171266', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 10);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (05000000, 'HIIT', 'Flexibility and Stretching', to_timestamp('2024-11-25 11:24:47.551170', 'YYYY-MM-DD HH24:MI:SS:FF'), 3400, 22);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (06000000, 'Bodyweight', 'Flexibility and Stretching', to_timestamp('2024-11-15 04:05:44.544806', 'YYYY-MM-DD HH24:MI:SS:FF'), 5118, 10);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (07000000, 'Bodyweight', 'Core Exercises', to_timestamp('2024-11-05 03:32:51.824732', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 14);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (08000000, 'Outdoor', 'Aerobic Fitness', to_timestamp('2024-11-17 19:58:01.738331', 'YYYY-MM-DD HH24:MI:SS:FF'), 3400, 22);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (09000000, 'TRX', 'Aerobic Fitness', to_timestamp('2024-11-10 09:47:19.652765', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 21);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (10000000, 'AMRAP', 'Strength Training', to_timestamp('2024-11-22 05:42:07.748604', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 11);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (01000000, 'HIIT', 'Aerobic Fitness', to_timestamp('2024-11-20 16:55:28.290814', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000100, 12);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (02000000, 'Outdoor', 'Core Exercises', to_timestamp('2024-11-15 04:26:20.828879', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000200, 11);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (03000000, 'AMRAP', 'Balance Training', to_timestamp('2024-11-17 18:43:02.687510', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000300, 30);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (04000000, 'Outdoor', 'Flexibility and Stretching', to_timestamp('2024-11-01 02:11:39.171266', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000500, 10);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (05000000, 'HIIT', 'Flexibility and Stretching', to_timestamp('2024-11-25 11:24:47.551170', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000100, 22);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (06000000, 'Bodyweight', 'Flexibility and Stretching', to_timestamp('2024-11-15 04:05:44.544806', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000200, 10);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (07000000, 'Bodyweight', 'Core Exercises', to_timestamp('2024-11-05 03:32:51.824732', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000300, 14);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (08000000, 'Outdoor', 'Aerobic Fitness', to_timestamp('2024-11-17 19:58:01.738331', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000500, 22);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (09000000, 'TRX', 'Aerobic Fitness', to_timestamp('2024-11-10 09:47:19.652765', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000100, 21);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (10000000, 'AMRAP', 'Strength Training', to_timestamp('2024-11-22 05:42:07.748604', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000500, 11);
 
 
 -- MEMBERSHIP
@@ -82,54 +82,44 @@ INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, R
 
 -- Personal_Training_Sessions
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100001, 00000001, 7857, TO_TIMESTAMP('2024-11-11 14:51:03.883603', 'YYYY-MM-DD HH24:MI:SS:FF'), 'This session focuses on strength building through compound lifts like squats, deadlifts, and bench press.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100002, 00000004, 3729, TO_TIMESTAMP('2024-11-02 06:16:37.431314', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Cardio endurance training with a mix of HIIT and steady-state running for improved stamina.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100003, 00000005, 4841, TO_TIMESTAMP('2024-11-02 07:57:03.590898', 'YYYY-MM-DD HH24:MI:SS:FF'), 'A functional training session emphasizing mobility, balance, and core strengthening exercises.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100004, 00000007, 7363, TO_TIMESTAMP('2024-11-15 01:38:39.756307', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Full-body resistance training to develop muscle tone and endurance, including lunges, rows, and push-ups.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100005, 00000011, 7926, TO_TIMESTAMP('2024-11-03 06:52:34.408842', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Progressive strength training with an emphasis on increasing weight for compound exercises.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100006, 00000012, 7926, TO_TIMESTAMP('2024-11-19 22:50:02.062975', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Recovery-focused session using stretching, foam rolling, and light resistance to alleviate soreness.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100007, 00000014, 3729, TO_TIMESTAMP('2024-11-24 17:58:40.590574', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Athletic performance training to enhance speed and agility using drills and plyometric exercises.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100008, 00000015, 3729, TO_TIMESTAMP('2024-11-12 00:50:31.533478', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Core-focused session featuring planks, Russian twists, and leg raises to strengthen abdominal muscles.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100009, 00000017, 7857, TO_TIMESTAMP('2024-11-12 18:25:18.753276', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Upper body workout with dumbbell presses, pull-ups, and bicep curls to build strength and definition.');
-
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100010, 00000019, 1987, TO_TIMESTAMP('2024-11-10 22:48:38.755188', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Weight loss session incorporating cardio, circuit training, and dietary advice for fat loss.');
-
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100001, 00000001, 00000400, TO_TIMESTAMP('2024-11-11 14:51:03.883603', 'YYYY-MM-DD HH24:MI:SS:FF'), 'This session focuses on strength building through compound lifts like squats, deadlifts, and bench press.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100002, 00000004, 00000600, TO_TIMESTAMP('2024-11-02 06:16:37.431314', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Cardio endurance training with a mix of HIIT and steady-state running for improved stamina.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100003, 00000005, 00000700, TO_TIMESTAMP('2024-11-02 07:57:03.590898', 'YYYY-MM-DD HH24:MI:SS:FF'), 'A functional training session emphasizing mobility, balance, and core strengthening exercises.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100004, 00000007, 00000800, TO_TIMESTAMP('2024-11-15 01:38:39.756307', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Full-body resistance training to develop muscle tone and endurance, including lunges, rows, and push-ups.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100005, 00000011, 00000900, TO_TIMESTAMP('2024-11-03 06:52:34.408842', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Progressive strength training with an emphasis on increasing weight for compound exercises.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100006, 00000012, 00001000, TO_TIMESTAMP('2024-11-19 22:50:02.062975', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Recovery-focused session using stretching, foam rolling, and light resistance to alleviate soreness.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100007, 00000014, 00000400, TO_TIMESTAMP('2024-11-24 17:58:40.590574', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Athletic performance training to enhance speed and agility using drills and plyometric exercises.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100008, 00000015, 00000600, TO_TIMESTAMP('2024-11-12 00:50:31.533478', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Core-focused session featuring planks, Russian twists, and leg raises to strengthen abdominal muscles.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100009, 00000017, 00000700, TO_TIMESTAMP('2024-11-12 18:25:18.753276', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Upper body workout with dumbbell presses, pull-ups, and bicep curls to build strength and definition.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100010, 00000019, 00000800, TO_TIMESTAMP('2024-11-10 22:48:38.755188', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Weight loss session incorporating cardio, circuit training, and dietary advice for fat loss.');
 
 -- HEALTH ASSESSMENTS
 
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010010, 00000001, 8878, to_timestamp('2024-02-20 13:10:56.384739', 'YYYY-MM-DD HH24:MI:SS:FF'), 82.41, 29.16, 36.9);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010011, 00000004, 5308, to_timestamp('2024-03-06 12:54:28.064248', 'YYYY-MM-DD HH24:MI:SS:FF'), 77.06, 22.54, 27.0);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010012, 00000005, 5308, to_timestamp('2024-04-17 12:49:50.370394', 'YYYY-MM-DD HH24:MI:SS:FF'), 72.27, 19.14, 25.7);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010013, 00000007, 6195, to_timestamp('2024-01-25 10:53:39.043383', 'YYYY-MM-DD HH24:MI:SS:FF'), 70.51, 24.05, 11.68);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010014, 00000011, 8878, to_timestamp('2024-11-01 20:42:08.104667', 'YYYY-MM-DD HH24:MI:SS:FF'), 76.41, 22.12, 19.24);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010015, 00000012, 9059, to_timestamp('2024-09-06 18:44:41.331434', 'YYYY-MM-DD HH24:MI:SS:FF'), 56.63, 21.1, 28.26);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010016, 00000014, 8912, to_timestamp('2024-11-04 08:47:27.612969', 'YYYY-MM-DD HH24:MI:SS:FF'), 89.99, 26.25, 26.62);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010017, 00000015, 5506, to_timestamp('2024-04-01 09:12:11.560210', 'YYYY-MM-DD HH24:MI:SS:FF'), 66.04, 27.04, 13.73);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010018, 00000017, 2531, to_timestamp('2024-01-22 17:52:34.653641', 'YYYY-MM-DD HH24:MI:SS:FF'), 65.83, 24.53, 18.26);
-INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010019, 00000019, 6195, to_timestamp('2024-08-15 15:31:37.468016', 'YYYY-MM-DD HH24:MI:SS:FF'), 54.94, 26.67, 37.5);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010010, 00000001, 00000400, to_timestamp('2024-02-20 13:10:56.384739', 'YYYY-MM-DD HH24:MI:SS:FF'), 82.41, 29.16, 36.9);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010011, 00000004, 00000600, to_timestamp('2024-03-06 12:54:28.064248', 'YYYY-MM-DD HH24:MI:SS:FF'), 77.06, 22.54, 27.0);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010012, 00000005, 00000700, to_timestamp('2024-04-17 12:49:50.370394', 'YYYY-MM-DD HH24:MI:SS:FF'), 72.27, 19.14, 25.7);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010013, 00000007, 00000800, to_timestamp('2024-01-25 10:53:39.043383', 'YYYY-MM-DD HH24:MI:SS:FF'), 70.51, 24.05, 11.68);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010014, 00000011, 00000900, to_timestamp('2024-11-01 20:42:08.104667', 'YYYY-MM-DD HH24:MI:SS:FF'), 76.41, 22.12, 19.24);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010015, 00000012, 00001000, to_timestamp('2024-09-06 18:44:41.331434', 'YYYY-MM-DD HH24:MI:SS:FF'), 56.63, 21.1, 28.26);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010016, 00000014, 00000400, to_timestamp('2024-11-04 08:47:27.612969', 'YYYY-MM-DD HH24:MI:SS:FF'), 89.99, 26.25, 26.62);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010017, 00000015, 00000600, to_timestamp('2024-04-01 09:12:11.560210', 'YYYY-MM-DD HH24:MI:SS:FF'), 66.04, 27.04, 13.73);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010018, 00000017, 00000700, to_timestamp('2024-01-22 17:52:34.653641', 'YYYY-MM-DD HH24:MI:SS:FF'), 65.83, 24.53, 18.26);
+INSERT INTO Health_Assessments (Assessment_ID, Client_ID, Trainer_ID, Assessment_Time, Weight, BMI, Body_Fat_Percentage) VALUES (10010019, 00000019, 00000800, to_timestamp('2024-08-15 15:31:37.468016', 'YYYY-MM-DD HH24:MI:SS:FF'), 54.94, 26.67, 37.5);
 
 
 
 -- GYM ATTENDANCE
 
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001001, 00000001, to_timestamp('2024-11-17 10:58:06.256762', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:54:57.804243', 'YYYY-MM-DD HH24:MI:SS:FF'), 3317);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001002, 00000004, to_timestamp('2024-11-12 16:27:56.106181', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-15 20:32:42.535105', 'YYYY-MM-DD HH24:MI:SS:FF'), 8196);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001003, 00000005, to_timestamp('2024-11-02 00:27:09.510413', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-02 16:22:50.755512', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001004, 00000007, to_timestamp('2024-11-02 05:55:08.228431', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-02 07:05:39.993567', 'YYYY-MM-DD HH24:MI:SS:FF'), 4770);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001005, 00000011, to_timestamp('2024-11-05 06:20:39.220176', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-05 09:06:28.339086', 'YYYY-MM-DD HH24:MI:SS:FF'), 3317);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001006, 00000012, to_timestamp('2024-11-19 07:33:16.296696', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-19 11:55:13.619340', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001007, 00000014, to_timestamp('2024-11-21 11:31:43.807801', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-21 14:52:44.837924', 'YYYY-MM-DD HH24:MI:SS:FF'), 8196);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001008, 00000015, to_timestamp('2024-11-17 18:03:49.815275', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:14:43.707832', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001009, 00000017, to_timestamp('2024-11-22 18:00:21.729636', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-22 20:39:47.778137', 'YYYY-MM-DD HH24:MI:SS:FF'), 3468);
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001010, 00000019, to_timestamp('2024-11-09 19:37:26.840638', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-09 21:35:55.654264', 'YYYY-MM-DD HH24:MI:SS:FF'), 4770);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001001, 00000001, to_timestamp('2024-11-17 10:58:06.256762', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:54:57.804243', 'YYYY-MM-DD HH24:MI:SS:FF'), 00010000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001002, 00000004, to_timestamp('2024-11-12 16:27:56.106181', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-15 20:32:42.535105', 'YYYY-MM-DD HH24:MI:SS:FF'), 00020000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001003, 00000005, to_timestamp('2024-11-02 00:27:09.510413', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-02 16:22:50.755512', 'YYYY-MM-DD HH24:MI:SS:FF'), 00030000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001004, 00000007, to_timestamp('2024-11-02 05:55:08.228431', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-02 07:05:39.993567', 'YYYY-MM-DD HH24:MI:SS:FF'), 00040000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001005, 00000011, to_timestamp('2024-11-05 06:20:39.220176', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-05 09:06:28.339086', 'YYYY-MM-DD HH24:MI:SS:FF'), 00050000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001006, 00000012, to_timestamp('2024-11-19 07:33:16.296696', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-19 11:55:13.619340', 'YYYY-MM-DD HH24:MI:SS:FF'), 00010000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001007, 00000014, to_timestamp('2024-11-21 11:31:43.807801', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-21 14:52:44.837924', 'YYYY-MM-DD HH24:MI:SS:FF'), 00020000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001008, 00000015, to_timestamp('2024-11-17 18:03:49.815275', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:14:43.707832', 'YYYY-MM-DD HH24:MI:SS:FF'), 00030000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001009, 00000017, to_timestamp('2024-11-22 18:00:21.729636', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-22 20:39:47.778137', 'YYYY-MM-DD HH24:MI:SS:FF'), 00040000);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (10001010, 00000019, to_timestamp('2024-11-09 19:37:26.840638', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-09 21:35:55.654264', 'YYYY-MM-DD HH24:MI:SS:FF'), 00050000);
 
 -- EQUIPMENT RENTALS
 
@@ -147,21 +137,21 @@ INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_
 
 -- CLASS BOOKINGS
 
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000001, 8054, 00000001, 'Waitlisted');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000002, 7274, 00000004, 'Canceled');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000003, 8707, 00000005, 'Waitlisted');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000004, 9665, 00000007, 'Waitlisted');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000005, 5677, 00000011, 'Canceled');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000006, 8306, 00000012, 'Canceled');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000007, 9080, 00000014, 'Canceled');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000008, 8306, 00000015, 'Confirmed');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000009, 7689, 00000017, 'Confirmed');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000010, 9957, 00000019, 'Canceled');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000011, 7658, 00000001, 'Confirmed');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000012, 7689, 00000004, 'Waitlisted');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000013, 5677, 00000005, 'Confirmed');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000014, 9080, 00000007, 'Canceled');
-INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000015, 8054, 00000011, 'Canceled');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000001, 01000000, 00000001, 'Waitlisted');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000002, 02000000, 00000004, 'Canceled');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000003, 03000000, 00000005, 'Waitlisted');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000004, 04000000, 00000007, 'Waitlisted');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000005, 05000000, 00000011, 'Canceled');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000006, 06000000, 00000012, 'Canceled');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000007, 07000000, 00000014, 'Canceled');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000008, 08000000, 00000015, 'Confirmed');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000009, 09000000, 00000017, 'Confirmed');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000010, 10000000, 00000019, 'Canceled');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000011, 06000000, 00000001, 'Confirmed');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000012, 07000000, 00000004, 'Waitlisted');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000013, 08000000, 00000005, 'Confirmed');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000014, 09000000, 00000007, 'Canceled');
+INSERT INTO Class_Bookings (Booking_ID, Class_ID, Client_ID, Status) VALUES (11000015, 10000000, 00000011, 'Canceled');
 
 -- BILLING
 
