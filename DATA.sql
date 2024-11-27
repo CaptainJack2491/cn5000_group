@@ -24,11 +24,11 @@ INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relation
 
 -- STAFF
 
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000100, 'Jamie', 'Williams', 'Instructor', 'Strength', '+44289018764', '+442074960752', 48778.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000200, 'Elaine', 'Quinn', 'Instructor', 'Flexibility', '+448081570933', '+4420749 0791', 28765.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000300, 'Jeremy', 'Smith', 'Instructor', 'Strength', '+441314960378', '+441632960987', 31755.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000100, 'Jamie', 'Williams', 'Instructor', 'Aerobic Fitness', '+44289018764', '+442074960752', 48778.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000200, 'Elaine', 'Quinn', 'Instructor', 'Core Exercises', '+448081570933', '+4420749 0791', 28765.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000300, 'Jeremy', 'Smith', 'Instructor', 'Balance Training', '+441314960378', '+441632960987', 31755.00);
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000400, 'Sharon', 'Jarvis', 'Trainer', 'Flexibility', '+441134960906', '+441174960681', 49190.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000500, 'Owen', 'Reynolds', 'Instructor', 'Strength', '+441184960716', '+442074960855', 35325.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000500, 'Owen', 'Reynolds', 'Instructor', 'Flexibility and Stretching', '+441184960716', '+442074960855', 35325.00);
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000600, 'Douglas', 'Potter', 'Trainer', 'Flexibility', '+449098790751', '+441414960712', 28310.00);
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000700, 'Brett', 'Jones', 'Trainer', 'Cardio', '+443069990830', '+441184960802', 45890.00);
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000800, 'Lydia', 'Pearson', 'Trainer', 'Cardio', '+441414960930', '+441164960374', 43220.00);
@@ -55,7 +55,7 @@ INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instruc
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (07000000, 'Bodyweight', 'Core Exercises', to_timestamp('2024-11-05 03:32:51.824732', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000300, 14);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (08000000, 'Outdoor', 'Aerobic Fitness', to_timestamp('2024-11-17 19:58:01.738331', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000500, 22);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (09000000, 'TRX', 'Aerobic Fitness', to_timestamp('2024-11-10 09:47:19.652765', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000100, 21);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (10000000, 'AMRAP', 'Strength Training', to_timestamp('2024-11-22 05:42:07.748604', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000500, 11);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (10000000, 'AMRAP', 'Core Exercises', to_timestamp('2024-11-22 05:42:07.748604', 'YYYY-MM-DD HH24:MI:SS:FF'), 00000500, 11);
 
 
 -- MEMBERSHIP
