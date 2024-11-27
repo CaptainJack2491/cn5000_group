@@ -26,3 +26,13 @@
    3. How to do this? 
       1. set a specific time before when the notifications go to the members.
       2. set the notifications every day around the time the member visits the gym.
+
+
+      #  Ids' Keys :-
+1. clint_id - first two degits starting from right .
+2. membership_id - first two degits starting from right where third degit from right is 1.
+3. Discount_id - fifth digit from right  starting form 6 ending at 9.
+4. facilities_id  - fifth digit from right  starting form 1 ending at 5.
+5. staff_Id  - third and forth digits starting from right.
+6. fitness_classes - seventh and eighth digit starting from right.
+
