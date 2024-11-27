@@ -41,3 +41,12 @@
 10. rantal_id - first and second digits form right where third and eighth digits are 1.
 11. booking_id - first and second digits form right where seventh and eighth digits are 1.
 12. billing_id  -first and second digits form right where  third ,forth,seventh and eighth digits are 1.
+
+
+
+
+# TO DO FOR QUERIES
+Q2:
+    - added yoga and pilates
+Q3:
+    - add service type in billing
