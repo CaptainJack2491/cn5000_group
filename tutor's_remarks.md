@@ -31,8 +31,13 @@
       #  Ids' Keys :-
 1. clint_id - first two degits starting from right .
 2. membership_id - first two degits starting from right where third degit from right is 1.
-3. Discount_id - fifth digit from right  starting form 6 ending at 9.
+3. Discount_id - forth and fifth digit from right starting at 11 ending at 14.
 4. facilities_id  - fifth digit from right  starting form 1 ending at 5.
 5. staff_Id  - third and forth digits starting from right.
 6. fitness_classes - seventh and eighth digit starting from right.
-
+7. training_id  - first two digits form right where sixth digit form right is 1.
+8. assessment_id - first and second digits form right starting form 10 ending at 19 where fifth and eight digits are 1.
+9. attendence_id  - first and second digits form right where forth and eighth digits are 1.
+10. rantal_id - first and second digits form right where third and eighth digits are 1.
+11. booking_id - first and second digits form right where seventh and eighth digits are 1.
+12. billing_id  -first and second digits form right where  third ,forth,seventh and eighth digits are 1.
