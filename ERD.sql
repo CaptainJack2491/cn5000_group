@@ -48,7 +48,7 @@ CREATE TABLE Personal_Training_Sessions (
     Client_ID NUMBER(8) NOT NULL,
     Trainer_ID NUMBER(8) NOT NULL,
     Session_Schedule TIMESTAMP NOT NULL,
-    Workout_Details CLOB
+    Exercise_Type VARCHAR2(50) CHECK (Exercise_Type IN ('Cardio', 'Strength Training', 'Calisthenics', 'Other')) NOT NULL
 );
 
 -- Table: Health Assessments
