@@ -26,7 +26,7 @@ INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relation
 
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000100, 'Jamie', 'Williams', 'Instructor', 'Aerobic Fitness', '+44289018764', '+442074960752', 48778.00);
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000200, 'Elaine', 'Quinn', 'Instructor', 'Core Exercises', '+448081570933', '+4420749 0791', 28765.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000300, 'Jeremy', 'Smith', 'Instructor', 'Balance Training', '+441314960378', '+441632960987', 31755.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000300, 'Jeremy', 'Smith', 'Instructor', 'Pilates', '+441314960378', '+441632960987', 31755.00);
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000400, 'Sharon', 'Jarvis', 'Trainer', 'Flexibility', '+441134960906', '+441174960681', 49190.00);
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000500, 'Owen', 'Reynolds', 'Instructor', 'Yoga', '+441184960716', '+442074960855', 35325.00);
 INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000600, 'Douglas', 'Potter', 'Trainer', 'Flexibility', '+449098790751', '+441414960712', 28310.00);
@@ -48,7 +48,7 @@ INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (0
 
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (01000000, 'HIIT', 'Aerobic Fitness', to_date('2024-11-20 16:00', 'YYYY-MM-DD HH24:MI'), 00000100, 12);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (02000000, 'Outdoor', 'Core Exercises', to_date('2024-11-15 05:30', 'YYYY-MM-DD HH24:MI'), 00000200, 11);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (03000000, 'AMRAP', 'Balance Training', to_date('2024-11-17 18:45', 'YYYY-MM-DD HH24:MI'), 00000300, 30);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (03000000, 'AMRAP', 'Pilates', to_date('2024-11-17 18:45', 'YYYY-MM-DD HH24:MI'), 00000300, 30);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (04000000, 'Outdoor', 'Yoga', to_date('2024-11-01 14:30', 'YYYY-MM-DD HH24:MI'), 00000500, 10);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (05000000, 'HIIT', 'Yoga', to_date('2024-11-25 11:30', 'YYYY-MM-DD HH24:MI'), 00000500, 22);
 INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (06000000, 'Bodyweight', 'Yoga', to_date('2024-11-15 06:00', 'YYYY-MM-DD HH24:MI'), 00000500, 10);
