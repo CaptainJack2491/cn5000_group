@@ -1,88 +1,83 @@
 --CLIENTS
 
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (6056, 'Bethan', 'Walker', 'Member', Null, '+447700900123', '+447400345678', 'butlerbeverley@example.net', '7 Emma row, East Lynn, PL3N 9TJ');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (9309, 'Abdul', 'Clark', 'Guest', 'Spouse', '+447591002345', '+447301234567', 'irene01@example.org', 'Flat 85h, Elaine corners, Hayleybury, M44 5DX');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (9004, 'Valerie', 'Brown', 'Guest', Null, '+447755678901', '+441414960187', 'mmartin@example.com', '461 Sheila manors, Lake Peterberg, CR5 8SD');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (5422, 'Katie', 'Cooper', 'Member', Null, '+447123456789', '+441414960121', 'gibbonsruth@example.org', '62 Robinson shoals, Daviesfurt, CW1W 0QA');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (7939, 'Gillian', 'Banks', 'Member', Null, '+448081570159', '+441414960049', 'ricky14@example.net', '312 King estate, North Allanside, W5 3HR');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (3483, 'Shane', 'Goodwin', 'Guest', 'Child', '+447800987654', '+447999123456', 'uthomas@example.com', 'Studio 4, Myers place, Williammouth, S5F 7ZN');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (1987, 'Amber', 'Cook', 'Member', Null, '+441214960218', '+447599654321', 'andrea85@example.com', 'Studio 44o, Jones ranch, New Shane, M92 8TN');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (8368, 'Dorothy', 'Edwards', 'Guest', 'Parent', '+441144960429', '+441314960847', 'graemebrown@example.org', '8 Fox place, North Pamelafort, GU57 3XE');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (7484, 'Andrew', 'Wilkinson', 'Guest', Null, '+447707890123', '+447500112233', 'carrolldale@example.net', '463 Summers vista, Fryside, S81 1ZB');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (8346, 'Arthur', 'Roberts', 'Guest', 'Child', '+447851223344', '+447450334455', 'victoria95@example.org', '058 Sean valley, East Kieran, ST4 2TW');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (2512, 'Beverley', 'Warner', 'Member', Null, '+447400445566', '+447789556677', 'andreataylor@example.net', '7 Jordan squares, New Debra, E5H 8FZ');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (8781, 'Grace', 'Roberts', 'Member', Null, '+447123667788', '+447801778899', 'ismith@example.org', '163 Jacob orchard, East Ruth, TQ1A 7ZP');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (8924, 'Marilyn', 'Watson', 'Guest', 'Child', '+447654889900', '+447403990011', 'janice51@example.com', '95 Scott motorway, Blackburnville, L47 1LH');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (2860, 'Tina', 'Owens', 'Member', Null, '+441514960585', '+447598001122', 'stacey61@example.org', 'Flat 15, Brown mountains, Port Katemouth, B6C 7FH');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (5093, 'Lindsey', 'Ellis', 'Member', Null, '+44890180260', '(+448081570798', 'wrightcaroline@example.com', '0 Bishop parks, West Ellieside, NW7X 6SN');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (1489, 'Geoffrey', 'Morley', 'Guest', 'Sibling', '+441144960483', '+441144960518', 'terry28@example.org', 'Studio 24r, Leslie points, East Benjaminmouth, B2C 3HL');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (7548, 'Carly', 'Horton', 'Member', Null, '+442079460997', '+441154960754', 'gracesmith@example.com', 'Flat 38Z, Brett crossroad, Williamstown, N2K 9SJ');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (6932, 'Josh', 'White', 'Guest', 'Friend', '+44289018345', '+441914960023', 'kirkscott@example.org', '06 Paula street, North Gracetown, BR8X 8BX');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (7175, 'Marc', 'Smith', 'Member', Null, '+441914960908', '+441174960656', 'damienlowe@example.com', '8 Nigel village, West Staceyview, W96 4SU');
-INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (1925, 'Deborah', 'Bartlett', 'Guest', Null, '+442074960789', '+441414960508', 'xedwards@example.org', 'Flat 6, Molly islands, Reidborough, L3 7QY');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000001, 'Bethan', 'Walker', 'Member', Null, '+447700900123', '+447400345678', 'butlerbeverley@example.net', '7 Emma row, East Lynn, PL3N 9TJ');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000002, 'Abdul', 'Clark', 'Guest', 'Spouse', '+447591002345', '+447301234567', 'irene01@example.org', 'Flat 85h, Elaine corners, Hayleybury, M44 5DX');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000003, 'Valerie', 'Brown', 'Guest', Null, '+447755678901', '+441414960187', 'mmartin@example.com', '461 Sheila manors, Lake Peterberg, CR5 8SD');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000004, 'Katie', 'Cooper', 'Member', Null, '+447123456789', '+441414960121', 'gibbonsruth@example.org', '62 Robinson shoals, Daviesfurt, CW1W 0QA');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000005, 'Gillian', 'Banks', 'Member', Null, '+448081570159', '+441414960049', 'ricky14@example.net', '312 King estate, North Allanside, W5 3HR');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000006, 'Shane', 'Goodwin', 'Guest', 'Child', '+447800987654', '+447999123456', 'uthomas@example.com', 'Studio 4, Myers place, Williammouth, S5F 7ZN');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000007, 'Amber', 'Cook', 'Member', Null, '+441214960218', '+447599654321', 'andrea85@example.com', 'Studio 44o, Jones ranch, New Shane, M92 8TN');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000008, 'Dorothy', 'Edwards', 'Guest', 'Parent', '+441144960429', '+441314960847', 'graemebrown@example.org', '8 Fox place, North Pamelafort, GU57 3XE');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000009, 'Andrew', 'Wilkinson', 'Guest', Null, '+447707890123', '+447500112233', 'carrolldale@example.net', '463 Summers vista, Fryside, S81 1ZB');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000010, 'Arthur', 'Roberts', 'Guest', 'Child', '+447851223344', '+447450334455', 'victoria95@example.org', '058 Sean valley, East Kieran, ST4 2TW');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000011, 'Beverley', 'Warner', 'Member', Null, '+447400445566', '+447789556677', 'andreataylor@example.net', '7 Jordan squares, New Debra, E5H 8FZ');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000012, 'Grace', 'Roberts', 'Member', Null, '+447123667788', '+447801778899', 'ismith@example.org', '163 Jacob orchard, East Ruth, TQ1A 7ZP');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000013, 'Marilyn', 'Watson', 'Guest', 'Child', '+447654889900', '+447403990011', 'janice51@example.com', '95 Scott motorway, Blackburnville, L47 1LH');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000014, 'Tina', 'Owens', 'Member', Null, '+441514960585', '+447598001122', 'stacey61@example.org', 'Flat 15, Brown mountains, Port Katemouth, B6C 7FH');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000015, 'Lindsey', 'Ellis', 'Member', Null, '+44890180260', '(+448081570798', 'wrightcaroline@example.com', '0 Bishop parks, West Ellieside, NW7X 6SN');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000016, 'Geoffrey', 'Morley', 'Guest', 'Sibling', '+441144960483', '+441144960518', 'terry28@example.org', 'Studio 24r, Leslie points, East Benjaminmouth, B2C 3HL');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000017, 'Carly', 'Horton', 'Member', Null, '+442079460997', '+441154960754', 'gracesmith@example.com', 'Flat 38Z, Brett crossroad, Williamstown, N2K 9SJ');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000018, 'Josh', 'White', 'Guest', 'Friend', '+44289018345', '+441914960023', 'kirkscott@example.org', '06 Paula street, North Gracetown, BR8X 8BX');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000019, 'Marc', 'Smith', 'Member', Null, '+441914960908', '+441174960656', 'damienlowe@example.com', '8 Nigel village, West Staceyview, W96 4SU');
+INSERT INTO Clients (Client_ID, First_Name, Last_Name, Client_Category, Relationship, Contact, Emergency_Contact, Email, Address) VALUES (00000020, 'Deborah', 'Bartlett', 'Guest', Null, '+442074960789', '+441414960508', 'xedwards@example.org', 'Flat 6, Molly islands, Reidborough, L3 7QY');
 
 
 -- STAFF
 
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (4465, 'Jamie', 'Williams', 'Instructor', 'Strength', '+44289018764', '+442074960752', 48778.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (9666, 'Elaine', 'Quinn', 'Instructor', 'Flexibility', '+448081570933', '+4420749 0791', 28765.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (2336, 'Jeremy', 'Smith', 'Instructor', 'Strength', '+441314960378', '+441632960987', 31755.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (4809, 'Sharon', 'Jarvis', 'Trainer', 'Flexibility', '+441134960906', '+441174960681', 49190.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (6369, 'Owen', 'Reynolds', 'Instructor', 'Strength', '+441184960716', '+442074960855', 35325.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (2235, 'Douglas', 'Potter', 'Trainer', 'Flexibility', '+449098790751', '+441414960712', 28310.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (5884, 'Brett', 'Jones', 'Trainer', 'Cardio', '+443069990830', '+441184960802', 45890.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (2688, 'Lydia', 'Pearson', 'Trainer', 'Cardio', '+441414960930', '+441164960374', 43220.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (2566, 'Adrian', 'Powell', 'Trainer', 'Strength', '+441154960112', '+442074960110', 20035.00);
-INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (2878, 'Katie', 'Brown', 'Trainer', 'Flexibility', '+448081570037', '+441134960239', 35195.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000100, 'Jamie', 'Williams', 'Instructor', 'Strength', '+44289018764', '+442074960752', 48778.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000200, 'Elaine', 'Quinn', 'Instructor', 'Flexibility', '+448081570933', '+4420749 0791', 28765.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000300, 'Jeremy', 'Smith', 'Instructor', 'Strength', '+441314960378', '+441632960987', 31755.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000400, 'Sharon', 'Jarvis', 'Trainer', 'Flexibility', '+441134960906', '+441174960681', 49190.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000500, 'Owen', 'Reynolds', 'Instructor', 'Strength', '+441184960716', '+442074960855', 35325.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000600, 'Douglas', 'Potter', 'Trainer', 'Flexibility', '+449098790751', '+441414960712', 28310.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000700, 'Brett', 'Jones', 'Trainer', 'Cardio', '+443069990830', '+441184960802', 45890.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000800, 'Lydia', 'Pearson', 'Trainer', 'Cardio', '+441414960930', '+441164960374', 43220.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00000900, 'Adrian', 'Powell', 'Trainer', 'Strength', '+441154960112', '+442074960110', 20035.00);
+INSERT INTO Staff (Staff_ID, First_Name, Last_Name, Staff_Role, Specialization, Contact, Emergency_Contact, Salary) VALUES (00001000, 'Katie', 'Brown', 'Trainer', 'Flexibility', '+448081570037', '+441134960239', 35195.00);
 
 -- FACILITIES
 
-INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (4831, 'Facility 1', 'East Building');
-INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (6771, 'Facility 2', 'West Building');
-INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (7885, 'Facility 3', 'Lake side Building');
-INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (6094, 'Facility 4', 'North Building');
-INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (6428, 'Facility 5', 'South Building');
+INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (00010000, 'Facility 1', 'East Building');
+INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (00020000, 'Facility 2', 'West Building');
+INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (00030000, 'Facility 3', 'Lake side Building');
+INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (00040000, 'Facility 4', 'North Building');
+INSERT INTO Facilities (Facility_ID, Facility_Name, Facility_Location) VALUES (00050000, 'Facility 5', 'South Building');
 
 
 -- FITNESS CLASSES
 
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (8323, 'HIIT', 'Aerobic Fitness', to_timestamp('2024-11-20 16:55:28.290814', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 12);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (1308, 'Outdoor', 'Core Exercises', to_timestamp('2024-11-15 04:26:20.828879', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 11);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (6933, 'AMRAP', 'Balance Training', to_timestamp('2024-11-17 18:43:02.687510', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 30);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (2134, 'Outdoor', 'Flexibility and Stretching', to_timestamp('2024-11-01 02:11:39.171266', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 10);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (5107, 'HIIT', 'Flexibility and Stretching', to_timestamp('2024-11-25 11:24:47.551170', 'YYYY-MM-DD HH24:MI:SS:FF'), 3400, 22);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (6747, 'Bodyweight', 'Flexibility and Stretching', to_timestamp('2024-11-15 04:05:44.544806', 'YYYY-MM-DD HH24:MI:SS:FF'), 5118, 10);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (5767, 'Bodyweight', 'Core Exercises', to_timestamp('2024-11-05 03:32:51.824732', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 14);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (4778, 'Outdoor', 'Aerobic Fitness', to_timestamp('2024-11-17 19:58:01.738331', 'YYYY-MM-DD HH24:MI:SS:FF'), 3400, 22);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (8941, 'TRX', 'Aerobic Fitness', to_timestamp('2024-11-10 09:47:19.652765', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 21);
-INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (3109, 'AMRAP', 'Strength Training', to_timestamp('2024-11-22 05:42:07.748604', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 11);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (01000000, 'HIIT', 'Aerobic Fitness', to_timestamp('2024-11-20 16:55:28.290814', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 12);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (02000000, 'Outdoor', 'Core Exercises', to_timestamp('2024-11-15 04:26:20.828879', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 11);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (03000000, 'AMRAP', 'Balance Training', to_timestamp('2024-11-17 18:43:02.687510', 'YYYY-MM-DD HH24:MI:SS:FF'), 4554, 30);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (04000000, 'Outdoor', 'Flexibility and Stretching', to_timestamp('2024-11-01 02:11:39.171266', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 10);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (05000000, 'HIIT', 'Flexibility and Stretching', to_timestamp('2024-11-25 11:24:47.551170', 'YYYY-MM-DD HH24:MI:SS:FF'), 3400, 22);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (06000000, 'Bodyweight', 'Flexibility and Stretching', to_timestamp('2024-11-15 04:05:44.544806', 'YYYY-MM-DD HH24:MI:SS:FF'), 5118, 10);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (07000000, 'Bodyweight', 'Core Exercises', to_timestamp('2024-11-05 03:32:51.824732', 'YYYY-MM-DD HH24:MI:SS:FF'), 2568, 14);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (08000000, 'Outdoor', 'Aerobic Fitness', to_timestamp('2024-11-17 19:58:01.738331', 'YYYY-MM-DD HH24:MI:SS:FF'), 3400, 22);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (09000000, 'TRX', 'Aerobic Fitness', to_timestamp('2024-11-10 09:47:19.652765', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 21);
+INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instructor_ID, Available_Slots) VALUES (10000000, 'AMRAP', 'Strength Training', to_timestamp('2024-11-22 05:42:07.748604', 'YYYY-MM-DD HH24:MI:SS:FF'), 4706, 11);
 
 
 -- MEMBERSHIP
 
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (2706, 4338, 'Platinum', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-05-10', 'YYYY-MM-DD'), 'Active', 342.78);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9291, 6685, 'Gold', to_date('2024-05-19', 'YYYY-MM-DD'), to_date('2024-11-19', 'YYYY-MM-DD'), 'Active', 363.65);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7150, 7535, 'Gold', to_date('2024-10-13', 'YYYY-MM-DD'), to_date('2025-04-13', 'YYYY-MM-DD'), 'Active', 450.11);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9527, 6617, 'Silver', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-07-08', 'YYYY-MM-DD'), 'Active', 434.75);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (9045, 8108, 'Silver', to_date('2024-01-12', 'YYYY-MM-DD'), to_date('2024-3-18', 'YYYY-MM-DD'), 'Active', 252.37);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8493, 4338, 'Platinum', to_date('2024-05-03', 'YYYY-MM-DD'), to_date('2024-5-20', 'YYYY-MM-DD'), 'Active', 230.82);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8683, 7575, 'Platinum', to_date('2024-09-01', 'YYYY-MM-DD'), to_date('2025-09-10', 'YYYY-MM-DD'), 'Active', 342.13);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (6479, 6685, 'Gold', to_date('2024-10-19', 'YYYY-MM-DD'), to_date('2025-04-20', 'YYYY-MM-DD'), 'Active', 79.48);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (4726, 9019, 'Gold', to_date('2024-02-24', 'YYYY-MM-DD'), to_date('2024-08-15', 'YYYY-MM-DD'), 'Inactive', 248.44);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7824, 8284, 'Platinum', to_date('2024-08-08', 'YYYY-MM-DD'), to_date('2025-08-26', 'YYYY-MM-DD'), 'Active', 53.13);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (1972, 9626, 'Gold', to_date('2024-01-16', 'YYYY-MM-DD'), to_date('2024-06-08', 'YYYY-MM-DD'), 'Inactive', 490.04);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (8332, 3465, 'Gold', to_date('2024-03-17', 'YYYY-MM-DD'), to_date('2024-09-17', 'YYYY-MM-DD'), 'Inactive', 62.47);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7168, 8888, 'Silver', to_date('2024-04-22', 'YYYY-MM-DD'), to_date('2024-7-17', 'YYYY-MM-DD'), 'Inactive', 491.67);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (7993, 9019, 'Platinum', to_date('2024-08-01', 'YYYY-MM-DD'), to_date('2025-08-21', 'YYYY-MM-DD'), 'Active', 355.72);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (3965, 5383, 'Gold', to_date('2024-04-02', 'YYYY-MM-DD'), to_date('2025-10-25', 'YYYY-MM-DD'), 'Active', 254.81);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000101, 4338, 'Platinum', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-05-10', 'YYYY-MM-DD'), 'Active', 342.78);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000102, 6685, 'Gold', to_date('2024-05-19', 'YYYY-MM-DD'), to_date('2024-11-19', 'YYYY-MM-DD'), 'Active', 363.65);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000103, 7535, 'Gold', to_date('2024-10-13', 'YYYY-MM-DD'), to_date('2025-04-13', 'YYYY-MM-DD'), 'Active', 450.11);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000104, 6617, 'Silver', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-07-08', 'YYYY-MM-DD'), 'Active', 434.75);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000105, 8108, 'Silver', to_date('2024-01-12', 'YYYY-MM-DD'), to_date('2024-3-18', 'YYYY-MM-DD'), 'Active', 252.37);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000106, 4338, 'Platinum', to_date('2024-05-03', 'YYYY-MM-DD'), to_date('2024-5-20', 'YYYY-MM-DD'), 'Active', 230.82);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000107, 7575, 'Platinum', to_date('2024-09-01', 'YYYY-MM-DD'), to_date('2025-09-10', 'YYYY-MM-DD'), 'Active', 342.13);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000108, 6685, 'Gold', to_date('2024-10-19', 'YYYY-MM-DD'), to_date('2025-04-20', 'YYYY-MM-DD'), 'Active', 79.48);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000109, 9019, 'Gold', to_date('2024-02-24', 'YYYY-MM-DD'), to_date('2024-08-15', 'YYYY-MM-DD'), 'Inactive', 248.44);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000110, 8284, 'Platinum', to_date('2024-08-08', 'YYYY-MM-DD'), to_date('2025-08-26', 'YYYY-MM-DD'), 'Active', 53.13);
 
 
 -- DISCOUNTS
 
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (8232, 'Referral', 'REFERME20', 0, 0.0);
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (4896, 'Promotion', 'NEWYEAR2025', 0, 0.0);
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (7207, 'Promotion', 'CHRISTMAS2024', 0, 0.0);
-INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (2995, 'Promotion', 'DIWALI2025', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (00060000, 'Referral', 'REFERME20', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (00070000, 'Promotion', 'NEWYEAR2025', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (00080000, 'Promotion', 'CHRISTMAS2024', 0, 0.0);
+INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, Revenue_Loss) VALUES (00090000, 'Promotion', 'DIWALI2025', 0, 0.0);
 
 
 -- Personal_Training_Sessions
@@ -155,6 +150,7 @@ INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facil
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (3402, 4281, to_timestamp('2024-11-17 18:03:49.815275', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-17 21:14:43.707832', 'YYYY-MM-DD HH24:MI:SS:FF'), 9790);
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (9870, 6108, to_timestamp('2024-11-22 18:00:21.729636', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-22 20:39:47.778137', 'YYYY-MM-DD HH24:MI:SS:FF'), 3468);
 INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES (1682, 5294, to_timestamp('2024-11-09 19:37:26.840638', 'YYYY-MM-DD HH24:MI:SS:FF'), to_timestamp('2024-11-09 21:35:55.654264', 'YYYY-MM-DD HH24:MI:SS:FF'), 4770);
+
 -- EQUIPMENT RENTALS
 
 INSERT INTO Equipment_Rentals (Rental_ID, Facility_ID, Equipment_SNo, Equipment_Model, Client_ID, Rental_Date, Return_Date, Maintenance_Schedule) VALUES (3277, 4685, 333, 'Barbells', 3204, to_date('2024-03-07', 'YYYY-MM-DD'), to_date('2024-08-19', 'YYYY-MM-DD'), to_date('2024-03-21', 'YYYY-MM-DD'));
