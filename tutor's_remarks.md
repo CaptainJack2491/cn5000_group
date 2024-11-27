@@ -50,3 +50,5 @@ Q2:
     - added yoga and pilates
 Q3:
     - add service type in billing
+Q6:
+    - changed workout_details in PTS to Exercies type

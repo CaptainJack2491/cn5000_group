@@ -62,11 +62,11 @@ INSERT INTO Fitness_Classes (Class_ID, Class_Name, Class_Type, Schedule, Instruc
 -- TODO CHANGE STATUS
 
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000101, 00000001, 'Platinum', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-05-10', 'YYYY-MM-DD'), 'Active', 342.78);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000102, 00000004, 'Gold', to_date('2024-05-19', 'YYYY-MM-DD'), to_date('2024-11-19', 'YYYY-MM-DD'), 'Active', 363.65);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000102, 00000004, 'Gold', to_date('2024-05-19', 'YYYY-MM-DD'), to_date('2024-11-19', 'YYYY-MM-DD'), 'Inactive', 363.65);
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000103, 00000005, 'Gold', to_date('2024-10-13', 'YYYY-MM-DD'), to_date('2025-04-13', 'YYYY-MM-DD'), 'Active', 450.11);
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000104, 00000007, 'Silver', to_date('2024-05-10', 'YYYY-MM-DD'), to_date('2025-07-08', 'YYYY-MM-DD'), 'Active', 434.75);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000105, 00000011, 'Silver', to_date('2024-01-12', 'YYYY-MM-DD'), to_date('2024-3-18', 'YYYY-MM-DD'), 'Active', 252.37);
-INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000106, 00000012, 'Platinum', to_date('2024-05-03', 'YYYY-MM-DD'), to_date('2024-5-20', 'YYYY-MM-DD'), 'Active', 230.82);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000105, 00000011, 'Silver', to_date('2024-01-12', 'YYYY-MM-DD'), to_date('2024-3-18', 'YYYY-MM-DD'), 'Inactive', 252.37);
+INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000106, 00000012, 'Platinum', to_date('2024-05-03', 'YYYY-MM-DD'), to_date('2024-5-20', 'YYYY-MM-DD'), 'Inactive', 230.82);
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000107, 00000014, 'Platinum', to_date('2024-09-01', 'YYYY-MM-DD'), to_date('2025-09-10', 'YYYY-MM-DD'), 'Active', 342.13);
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000108, 00000015, 'Gold', to_date('2024-10-19', 'YYYY-MM-DD'), to_date('2025-04-20', 'YYYY-MM-DD'), 'Active', 79.48);
 INSERT INTO Membership (Membership_ID, Client_ID, Plan_Type, Start_Date, End_Date, Status, Price) VALUES (00000109, 00000017, 'Gold', to_date('2024-02-24', 'YYYY-MM-DD'), to_date('2024-08-15', 'YYYY-MM-DD'), 'Inactive', 248.44);
