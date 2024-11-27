@@ -82,45 +82,25 @@ INSERT INTO Discounts (Discount_ID, Discount_Type, Discount_Code, Usage_Count, R
 
 -- Personal_Training_Sessions
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (1281, 9153, 7857, TO_TIMESTAMP('2024-11-11 14:51:03.883603', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'This session focuses on strength building through compound lifts like squats, deadlifts, and bench press.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100001, 9153, 7857, TO_TIMESTAMP('2024-11-11 14:51:03.883603', 'YYYY-MM-DD HH24:MI:SS:FF'), 'This session focuses on strength building through compound lifts like squats, deadlifts, and bench press.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (2882, 4811, 3729, TO_TIMESTAMP('2024-11-02 06:16:37.431314', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'Cardio endurance training with a mix of HIIT and steady-state running for improved stamina.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100002, 4811, 3729, TO_TIMESTAMP('2024-11-02 06:16:37.431314', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Cardio endurance training with a mix of HIIT and steady-state running for improved stamina.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (3275, 3167, 4841, TO_TIMESTAMP('2024-11-02 07:57:03.590898', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'A functional training session emphasizing mobility, balance, and core strengthening exercises.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100003, 3167, 4841, TO_TIMESTAMP('2024-11-02 07:57:03.590898', 'YYYY-MM-DD HH24:MI:SS:FF'), 'A functional training session emphasizing mobility, balance, and core strengthening exercises.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (8759, 9081, 7363, TO_TIMESTAMP('2024-11-15 01:38:39.756307', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'Full-body resistance training to develop muscle tone and endurance, including lunges, rows, and push-ups.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100004, 9081, 7363, TO_TIMESTAMP('2024-11-15 01:38:39.756307', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Full-body resistance training to develop muscle tone and endurance, including lunges, rows, and push-ups.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (7203, 9573, 7926, TO_TIMESTAMP('2024-11-03 06:52:34.408842', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'Progressive strength training with an emphasis on increasing weight for compound exercises.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100005, 9573, 7926, TO_TIMESTAMP('2024-11-03 06:52:34.408842', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Progressive strength training with an emphasis on increasing weight for compound exercises.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (6316, 4962, 7926, TO_TIMESTAMP('2024-11-19 22:50:02.062975', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'Recovery-focused session using stretching, foam rolling, and light resistance to alleviate soreness.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100006, 4962, 7926, TO_TIMESTAMP('2024-11-19 22:50:02.062975', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Recovery-focused session using stretching, foam rolling, and light resistance to alleviate soreness.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (4652, 2731, 3729, TO_TIMESTAMP('2024-11-24 17:58:40.590574', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'Athletic performance training to enhance speed and agility using drills and plyometric exercises.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100007, 2731, 3729, TO_TIMESTAMP('2024-11-24 17:58:40.590574', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Athletic performance training to enhance speed and agility using drills and plyometric exercises.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (6542, 1528, 3729, TO_TIMESTAMP('2024-11-12 00:50:31.533478', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'Core-focused session featuring planks, Russian twists, and leg raises to strengthen abdominal muscles.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100008, 1528, 3729, TO_TIMESTAMP('2024-11-12 00:50:31.533478', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Core-focused session featuring planks, Russian twists, and leg raises to strengthen abdominal muscles.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (5845, 2071, 7857, TO_TIMESTAMP('2024-11-12 18:25:18.753276', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'Upper body workout with dumbbell presses, pull-ups, and bicep curls to build strength and definition.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100009, 2071, 7857, TO_TIMESTAMP('2024-11-12 18:25:18.753276', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Upper body workout with dumbbell presses, pull-ups, and bicep curls to build strength and definition.');
 
-INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) 
-VALUES (1352, 2697, 1987, TO_TIMESTAMP('2024-11-10 22:48:38.755188', 'YYYY-MM-DD HH24:MI:SS:FF'), 
-'Weight loss session incorporating cardio, circuit training, and dietary advice for fat loss.');
+INSERT INTO Personal_Training_Sessions (Training_ID, Client_ID, Trainer_ID, Session_Schedule, Workout_Details) VALUES (00100010, 2697, 1987, TO_TIMESTAMP('2024-11-10 22:48:38.755188', 'YYYY-MM-DD HH24:MI:SS:FF'), 'Weight loss session incorporating cardio, circuit training, and dietary advice for fat loss.');
 
 
 -- HEALTH ASSESSMENTS
