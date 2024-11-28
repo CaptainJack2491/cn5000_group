@@ -33,14 +33,7 @@ for client_id in client_ids:
         
         # Generate the SQL statement
         sql = f"""
-INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) 
-VALUES (
-    {attendance_id}, 
-    {str(client_id).zfill(8)}, 
-    TO_TIMESTAMP('{check_in.strftime('%Y-%m-%d %H:%M:%S.%f')}', 'YYYY-MM-DD HH24:MI:SS.FF'), 
-    TO_TIMESTAMP('{check_out.strftime('%Y-%m-%d %H:%M:%S.%f')}', 'YYYY-MM-DD HH24:MI:SS.FF'), 
-    {str(facility_id).zfill(8)}
-);
+INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facility_ID) VALUES ({attendance_id}, {str(client_id).zfill(8)}, TO_TIMESTAMP('{check_in.strftime('%Y-%m-%d %H:%M:%S.%f')}', 'YYYY-MM-DD HH24:MI:SS.FF'), TO_TIMESTAMP('{check_out.strftime('%Y-%m-%d %H:%M:%S.%f')}', 'YYYY-MM-DD HH24:MI:SS.FF'), {str(facility_id).zfill(8)});
 """
         sql_statements.append(sql.strip())
         attendance_id += 1  # Increment Attendance_ID
