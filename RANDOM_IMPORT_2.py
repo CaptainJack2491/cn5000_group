@@ -20,15 +20,28 @@ attendance_id = 10001011  # Starting Attendance_ID
 days_range = [start_date + timedelta(days=x) for x in range((end_date - start_date).days + 1)]  # List of all days in the range
 
 for client_id in client_ids:
-    # Shuffle the days to ensure randomness
-    random_days = random.sample(days_range, len(days_range))  # Shuffle all days in the range
-    
-    for day in random_days:
+    # Determine a random number of entries between 14 and 22
+    num_entries = random.randint(14, 22)
+
+    # Create a set to store unique dates for this client
+    used_dates = set()
+
+    for _ in range(num_entries):
+        # Generate a random date
+        random_date = random.choice(days_range)
+
+        # Ensure the date is unique for this client
+        while random_date in used_dates:
+            random_date = random.choice(days_range)
+
+        used_dates.add(random_date)
+
         # Randomize check-in and check-out times for this day
-        check_in, check_out = random_daily_check_in_and_out(day)
-        
+        check_in, check_out = random_daily_check_in_and_out(random_date)
+
         # Randomize Facility_ID
         facility_id = random.choice(facility_ids)
+
         
         # Generate the SQL statement
         sql = f"""
@@ -38,7 +51,6 @@ INSERT INTO Gym_Attendance (Attendance_ID, Client_ID, Check_in, Check_out, Facil
         attendance_id += 1  # Increment Attendance_ID
 
 # Save to a file or print
-with open("generated_gym_attendance.sql", "w") as file:
-    file.write("\n".join(sql_statements))
+print("\n".join(sql_statements))
 
 print(f"Generated {len(sql_statements)} SQL insert statements.")
