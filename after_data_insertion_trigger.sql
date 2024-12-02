@@ -21,7 +21,7 @@ BEGIN
     -- Check if the End_Date is between system date + 1 and system date + 7
     IF :NEW.End_Date > TRUNC(SYSDATE) AND :NEW.End_Date <= TRUNC(SYSDATE) + 7 THEN
         -- Raise an application error to display a message in APEX
-        RAISE_APPLICATION_ERROR(-20001, 'Your membership is expiring soon. Please renew your membership before ' || :NEW.End_Date, '.');
+        RAISE_APPLICATION_ERROR(-20001, 'Your membership is expiring soon. Please renew your membership before ' || TO_CHAR(:NEW.End_Date, 'DD-MON-YYYY');
     END IF;
 END;
 /
