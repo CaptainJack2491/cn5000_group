@@ -4,7 +4,7 @@ CREATE TABLE Clients (
     First_Name VARCHAR2(100) NOT NULL,
     Last_Name VARCHAR2(100) NOT NULL,
     Client_Category VARCHAR2(10) CHECK (Client_Category IN ('Member', 'Guest')) NOT NULL,
-    Gym_Visits NUMBER(2) DEFAULT 0,
+    Gym_Visits NUMBER(4) DEFAULT 0,
     Relationship VARCHAR2(50),
     Contact VARCHAR2(15) NOT NULL,
     Emergency_Contact VARCHAR2(15),
