@@ -1,0 +1,59 @@
+Here are the constraints with their respective relationship types (one-to-one or one-to-many):
+
+1. **FK_Membership_Client**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One client (`Clients.Client_ID`) can have multiple memberships (`Membership.Client_ID`).
+
+2. **FK_Class_Instructor**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One staff member (`Staff.Staff_ID`) can instruct multiple fitness classes (`Fitness_Classes.Instructor_ID`).
+
+3. **FK_Booking_Class**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One fitness class (`Fitness_Classes.Class_ID`) can have multiple bookings (`Class_Bookings.Class_ID`).
+
+4. **FK_Booking_Client**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One client (`Clients.Client_ID`) can make multiple bookings (`Class_Bookings.Client_ID`).
+
+5. **FK_Personal_training_Sessions_Client**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One client (`Clients.Client_ID`) can have multiple personal training sessions (`Personal_training_Sessions.Client_ID`).
+
+6. **FK_Personal_training_Sessions_Trainer**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One trainer (`Staff.Staff_ID`) can conduct multiple personal training sessions (`Personal_training_Sessions.Trainer_ID`).
+
+7. **FK_Assessment_Client**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One client (`Clients.Client_ID`) can have multiple health assessments (`Health_Assessments.Client_ID`).
+
+8. **FK_Assessment_Trainer**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One trainer (`Staff.Staff_ID`) can conduct multiple health assessments (`Health_Assessments.Trainer_ID`).
+
+9. **FK_Attendance_Client**:  
+   - **Relationship Type**: **One-to-Many**  
+   - **Explanation**: One client (`Clients.Client_ID`) can have multiple gym attendance records (`Gym_Attendance.Client_ID`).
+
+10. **FK_Attendance_Facility**:  
+    - **Relationship Type**: **One-to-Many**  
+    - **Explanation**: One facility (`Facilities.Facility_ID`) can have multiple gym attendance records (`Gym_Attendance.Facility_ID`).
+
+11. **FK_Billing_Client**:  
+    - **Relationship Type**: **One-to-Many**  
+    - **Explanation**: One client (`Clients.Client_ID`) can have multiple billing records (`Billing.Client_ID`).
+
+12. **FK_Billing_Discount**:  
+    - **Relationship Type**: **One-to-Many**  
+    - **Explanation**: One discount (`Discounts.Discount_ID`) can be applied to multiple billing records (`Billing.Discount_ID`).
+
+13. **FK_Rental_Client**:  
+    - **Relationship Type**: **One-to-Many**  
+    - **Explanation**: One client (`Clients.Client_ID`) can have multiple equipment rental records (`Equipment_Rentals.Client_ID`).
+
+14. **FK_Rental_Facility**:  
+    - **Relationship Type**: **One-to-Many**  
+    - **Explanation**: One facility (`Facilities.Facility_ID`) can have multiple equipment rental records (`Equipment_Rentals.Facility_ID`).  
+
+All the relationships in this schema are **one-to-many**, as each entity in the "one" side can relate to multiple entities in the "many" side. There are no direct **one-to-one** relationships in this schema.
