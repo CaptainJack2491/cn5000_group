@@ -1,0 +1,14 @@
+project:
+  title: "CN5000 Group Coursework Report"
+
+format:
+  html:
+    toc: true
+  docx: default
+  jats: default
+  agu-pdf: default
+  pdf:
+    execute:
+      eval: false
+
+
