@@ -1,3 +1,8 @@
+---
+title: "CN5000 Coursework Report"
+format: html
+---
+
 # CN5000 Coursework Report
 
 ## 1. Designing Part (20 Marks)
