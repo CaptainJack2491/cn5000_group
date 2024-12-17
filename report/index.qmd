@@ -1,10 +1,5 @@
 ---
 title: "CN5000 Group Coursework Report"
-author: 
-  - Hard Joshi
-  - Jayrup Nakawala
-  - Shyam Jagani
-  - Yogi Patel
 format:
   html:
     toc: true
@@ -14,31 +9,49 @@ format:
     toc: true
     toc-depth: 3
     number-sections: true
+    title-block-affiliation: true
     colorlinks: true
     header-includes: |
-      \usepackage{fancyhdr}
-      \usepackage{graphicx}
-      \pagestyle{fancy}
-      \fancyhf{} % Clear all header and footer fields
+      \usepackage{titling}
+      \renewcommand{\maketitlehookb}{
+        \vspace{1em}
+        \noindent
+        \begin{center}
+        \textbf{Group Members}\\[1em]
+        \begin{tabular}{ll}
+        Hard Joshi & \hspace{2em} \textit{ID: 12345678} \\
+        Jayrup Nakawala & \hspace{2em} \textit{ID: 87654321} \\
+        Shyam Jagani & \hspace{2em} \textit{ID: 11223344} \\
+        Yogi Patel & \hspace{2em} \textit{ID: 44332211} \\
+        \end{tabular}
+        \end{center}
+        \newpage
+      }
+      % \usepackage{fancyhdr}
+      % \usepackage{graphicx}
+      % \fancyhf{} % Clear all header and footer fields
 
       % Add Logo to Header
-      \lhead{\includegraphics[width=3cm]{images/uel_logo.png}}
+      % \rhead{\includegraphics[width=1.8cm]{photos/uel_logo.png}}
 
       % Add Page Numbers in Footer
-      \rfoot{\thepage}
+      % \rfoot{\thepage}
+      % \usepackage{float}
+      % \restylefloat{table}
 
 execute:
   eval: false
 ---
 
+
+
 \newpage
+## Entities and ERD (10 Marks)
 
-# CN5000 Coursework Report
+### Identification of Potential Entities
 
+![Potential Entities](photos/potential_entities.jpg){ width=60%}
 
-## 1 Entities and ERD (10 Marks)
-
-### 1.1 Identification of Potential Entities
 During the initial phase of the design, we identified **17 entities** as shown in the brainstorming process. These entities were:
 
   1. Fitness Center
@@ -59,9 +72,8 @@ During the initial phase of the design, we identified **17 entities** as shown i
   16. Membership
   17. Invoice
 
-  ![Potential Entities](photos/potential_entities.jpg){ width=70%}
 
-### 1.2 Refinement of Entities
+### Refinement of Entities
 The process of refinement involved carefully analyzing the identified entities to eliminate redundancies, merge similar entities, and ensure that only relevant entities were retained to represent the system requirements effectively. The following steps were taken during this refinement process:
 
 1. **Combining Overlapping Entities**: 
@@ -70,7 +82,8 @@ The process of refinement involved carefully analyzing the identified entities t
 
 2. **Eliminating Redundant Entities**:
    - *Fitness Center* was removed as it represented a general concept rather than a specific data entity.
-   - *Workshops* were treated as a subset of **Fitness_Classes** or **Personal_Training_Sessions**, depending on the context, and therefore were eliminated.
+   - *Workshops* were treated as a subset of **Fitness_Classes** or 
+   **Personal_Training_Sessions**, depending on the context, and therefore were eliminated.
    - *Payments* and *Invoice* were consolidated into **Billing**, which effectively captured all payment-related activities and attributes.
 
 3. **Creating New Relationships**:
@@ -97,10 +110,10 @@ The final streamlined list of **12 entities** was as follows:
 
 This refined set of entities ensured clarity, reduced redundancy, and effectively supported the required system functionalities.
 
-### 1.3 Appropriate Naming for Entities
+### Appropriate Naming for Entities
 We ensured appropriate and consistent naming conventions for all entities to maintain clarity, ease of understanding, and alignment with database design principles. Entities were represented using singular nouns and underscores to separate words where necessary (e.g., **Fitness_Classes**, **Class_Bookings**). These naming conventions aligned with standard database design practices.
 
-### 1.4 Entity-Relationship Diagram (ERD)
+### Entity-Relationship Diagram (ERD)
 We created the Entity-Relationship Diagram (ERD) to represent the relationships among the final 12 entities. Key design considerations included:
 
 - **Identification of Major Entities**: We retained all major entities critical to the system in the final design.
@@ -117,11 +130,19 @@ We created the Entity-Relationship Diagram (ERD) to represent the relationships 
 
   - **Billing** records were associated with **Clients** and reflected applicable **Discounts**.
 
+![Denormalized ERD](photos/Denormalized_ERD.pdf)
+
 The ERD visually illustrated these entities, their attributes, and the relationships that facilitated data integrity and functionality within the **Gym Management System**. We ensured precision in the design using CASE tools to comply with database modeling standards.
 
----
+### UseCase Diagram
 
-## 2. Normalization Process
+![Use Case Diagram](photos/UseCaseDiagram.jpg)
+
+*To access the full Use Case Diagram, click [here](https://miro.com/app/board/uXjVLEUUoF0=/?share_link_id=690638262021)*
+
+\newpage
+
+## Normalization Process
 Normalization is a key process in relational database design that we followed to reduce data redundancy and improve data integrity. It involved organizing tables and attributes into well-defined structures that minimized duplication and eliminated undesirable anomalies (insert, update, and delete anomalies).
 
 The normalization process followed three key stages:
@@ -141,22 +162,31 @@ The normalization process followed three key stages:
    - We removed transitive dependencies, where non-key attributes depended on other non-key attributes.
    - Example: In a Billing table, if Discount_Percentage was depending on Discount_ID, this dependency was moved to a separate **Discounts** table.
 
-### 2.1 Achieving 3NF in the Gym Management System
+### Achieving 3NF in the Gym Management System
 We ensured that all tables in the Gym Management System adhered to **Third Normal Form (3NF)**. The steps followed included:
-- Ensuring all attributes were atomic (1NF).
-- Eliminating partial dependencies (2NF) by clearly defining primary keys.
-- Removing transitive dependencies (3NF) to ensure attributes only depended on the primary key. For instance:
-  - The **Billing** table referenced **Discount_ID** instead of directly storing discount details.
-  - **Class_Bookings** linked **Clients** and **Fitness_Classes** without duplicating client or class data.
+
+  - Ensuring all attributes were atomic (1NF).
+
+  - Eliminating partial dependencies (2NF) by clearly defining primary keys.
+
+  - Removing transitive dependencies (3NF) to ensure attributes only depended on the primary key. For instance:
+
+    - The **Billing** table referenced **Discount_ID** instead of directly storing discount details.
+
+    - **Class_Bookings** linked **Clients** and **Fitness_Classes** without duplicating client or class data.
 
 By adhering to these normalization principles, we ensured:
-- Minimal data redundancy.
-- Data integrity through consistent and well-structured relationships.
-- Efficient query performance and database maintenance.
+
+  - Minimal data redundancy.
+
+  - Data integrity through consistent and well-structured relationships.
+
+  - Efficient query performance and database maintenance.
 
 ---
 
-### 2.2 ERD Diagram
+
+### ERD Diagram
 The final ERD, which visually depicted the relationships and multiplicity, was provided as part of the **Appendices** section. It showed:
 - Entities with primary and foreign keys.
 - Relationships between tables.
@@ -164,34 +194,34 @@ The final ERD, which visually depicted the relationships and multiplicity, was p
 
 This comprehensive approach ensured that the database design was normalized, logically structured, and aligned with the requirements of the Gym Management System.
 
-
+![ERD Diagram](photos/ERD.svg)
 
 
 ---
 
 
-## 3. Creation of Tables in SQL and Population of Tables (10 Marks)
+## Creation of Tables in SQL and Population of Tables (10 Marks)
 
-### 3.1 Creating Database in SQL
+### Creating Database in SQL
 - **Correct SQL Syntax**:
   - Data types, primary key, foreign key, not null, unique, and check constraints where appropriate.
 - **Evidence of Successful Execution**.
 - **At Least 10 Records** in each table.
 
-### 3.2 SQL Queries 
+### SQL Queries 
 - **Correct SQL Syntax**.
 - **Evidence of Successful Execution**.
 
-### 3.3 Stored Procedures and Triggers 
+### Stored Procedures and Triggers 
 - **Correct SQL Syntax** to perform defined actions.
 - **Evidence of Successful Execution**.
 - Partial attempts can gain marks if effort is evident.
 
 ---
 
-## 4. Report and Presentation (30 Marks)
+## Report and Presentation (30 Marks)
 
-### 4.1 Report Reflection (5 Marks)
+### Report Reflection (5 Marks)
 - **Principles of Database Design**:
   - Application to the case study.
   - Recognition of alternative solutions.
@@ -200,16 +230,170 @@ This comprehensive approach ensured that the database design was normalized, log
   - Well-written and logically coherent.
   - Evaluates design decisions and alternatives.
 
-### 4.2 Presentation (20 Marks)
+### Presentation (20 Marks)
 - **Design and Implementation in Oracle**.
   - 10-minute presentation.
   - 5-minute Q&A session.
 
-### 4.3 Gantt Chart (5 Marks)
+### Gantt Chart (5 Marks)
 - **Milestones and Group Involvement**.
 - Documentation stating group member participation.
 
 ---
+
+## Sql Queries (15 Marks)
+
+### Get a list of all fitness classes offered at the gym, along with their schedules and the instructor names. (1 mark)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{photos/queries/query1.png}
+\caption{Query 1}
+\end{figure}
+
+### Display all members who have booked a yoga class, including their booking status (Confirmed,Canceled, etc.). (1 mark)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{photos/queries/query3.png}
+\caption{Query 2}
+\end{figure}
+
+
+### Calculate the total revenue generated from memberships, personal training sessions, and class bookings for a given month. (2 marks)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{photos/queries/query4.png}
+\caption{Query 4}
+\end{figure}
+
+### List the top 5 trainers who have conducted the most personal training sessions. (2 marks)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{photos/queries/query5.png}
+\caption{Query 5}
+\end{figure}
+
+### List all members whose membership has expired but who have attended the gym in the past 30 days. (2 marks)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{photos/queries/query5.png}
+\caption{Query 5}
+\end{figure}
+
+### Find the members who have the most active workout plans with at least three different exercises in their current routine. (2 marks)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{photos/queries/query6.png}
+\caption{Query 6}
+\end{figure}
+
+### Calculate the total usage of discount codes and how much revenue was lost due to discounts applied in the last year. (2 marks)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{photos/queries/query7.png}
+\caption{Query 7}
+\end{figure}
+
+### Identify the progress of members in the last month at the gym, including the number of fitness classes they attended. The result should display the member's name, the specific dates they attended, and the total number of classes attended during that period. (3 marks)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{photos/queries/query8_a.png}
+\caption{Query 8}
+\end{figure}
+
+## Triggers and Store Procedures (5 Marks)
+
+### Create a trigger to automatically set the membership status to "Inactive" when a member's membership has expired (i.e., the current date exceeds the membership's end date). (2 marks)
+
+### Create a trigger to automatically decrease the available spots for a fitness class when a member books a class and ensure the class capacity is not exceeded. (2 marks)
+
+### Create a trigger to automatically notify members when their membership is about to expire (e.g., 7 days before the end date). (1 mark)
+
+
+\newpage
+
+## Presentation (20 Marks)
+
+### Presentation Slides
+
+![slide 1](photos/CN5000-images-0.jpg)
+![slide 2](photos/CN5000-images-1.jpg)
+![slide 3](photos/CN5000-images-2.jpg)
+![slide 4](photos/CN5000-images-3.jpg)
+![slide 5](photos/CN5000-images-4.jpg)
+![slide 6](photos/CN5000-images-5.jpg)
+![slide 7](photos/CN5000-images-6.jpg)
+![slide 8](photos/CN5000-images-7.jpg)
+![slide 9](photos/CN5000-images-8.jpg)
+![slide 10](photos/CN5000-images-10.jpg)
+![slide 11](photos/CN5000-images-11.jpg)
+![slide 12](photos/CN5000-images-12.jpg)
+![slide 13](photos/CN5000-images-13.jpg)
+![slide 14](photos/CN5000-images-14.jpg)
+
+### Data Dictionary 
+
+#### Clients Table
+| Column Name         | Data Type         | Null     | PK/FK | Description                                  |
+|---------------------|-------------------|----------|-------|----------------------------------------------|
+| Client_ID           | NUMBER(8)        | NOT NULL | PK    | Unique identifier for each client            |
+| First_Name          | VARCHAR2(100)    | NOT NULL |       | Client's first name                          |
+| Last_Name           | VARCHAR2(100)    | NOT NULL |       | Client's last name                           |
+| Client_Category     | VARCHAR2(10)     | NOT NULL |       | Client's category (Member or Guest)          |
+| Gym_Visits          | NUMBER(4)        | NULL     |       | Total number of gym visits                   |
+| Relationship        | VARCHAR2(50)     | NULL     |       | Relationship to a member (if applicable)     |
+| Contact             | VARCHAR2(15)     | NOT NULL |       | Primary contact number                       |
+| Emergency_Contact   | VARCHAR2(15)     | NULL     |       | Emergency contact number                     |
+| Email               | VARCHAR2(100)    | NOT NULL | UNIQUE| Client's email address                       |
+| Address             | CLOB             | NULL     |       | Client's address                             |
+
+#### Membership Table
+| Column Name         | Data Type         | Null     | PK/FK | Description                                  |
+|---------------------|-------------------|----------|-------|----------------------------------------------|
+| Membership_ID       | NUMBER(8)        | NOT NULL | PK    | Unique identifier for each membership        |
+| Client_ID           | NUMBER(8)        | NOT NULL | FK    | Foreign key referencing the Clients table    |
+| Plan_Type           | VARCHAR2(10)     | NOT NULL |       | Membership plan type (Silver, Gold, Platinum)|
+| Start_Date          | DATE             | NOT NULL |       | Membership start date                        |
+| End_Date            | DATE             | NOT NULL |       | Membership end date                          |
+| Status              | VARCHAR2(10)     | NOT NULL |       | Membership status (Active or Inactive)       |
+| Price               | NUMBER(10,2)     | NOT NULL |       | Membership price                             |
+
+#### Fitness_Classes Table
+| Column Name         | Data Type         | Null     | PK/FK | Description                                  |
+|---------------------|-------------------|----------|-------|----------------------------------------------|
+| Class_ID            | NUMBER(8)        | NOT NULL | PK    | Unique identifier for each fitness class     |
+| Class_Name          | VARCHAR2(100)    | NOT NULL |       | Class name                                   |
+| Class_Type          | VARCHAR2(30)     | NOT NULL |       | Class type (Core, Yoga, Pilates, Aerobic)    |
+| Schedule            | TIMESTAMP        | NOT NULL |       | Class schedule                               |
+| Instructor_ID       | NUMBER(8)        | NOT NULL | FK    | Foreign key referencing the Staff table      |
+| Available_Slots     | NUMBER           | NOT NULL |       | Number of available slots in the class       |
+
+#### Class_Bookings Table
+| Column Name         | Data Type         | Null     | PK/FK | Description                                  |
+|---------------------|-------------------|----------|-------|----------------------------------------------|
+| Booking_ID          | NUMBER(8)        | NOT NULL | PK    | Unique identifier for each class booking     |
+| Class_ID            | NUMBER(8)        | NOT NULL | FK    | Foreign key referencing Fitness_Classes table|
+| Client_ID           | NUMBER(8)        | NOT NULL | FK    | Foreign key referencing the Clients table    |
+| Status              | VARCHAR2(15)     | NOT NULL |       | Booking status (Confirmed, Canceled)         |
+
+#### Health_Assessments Table
+| Column Name         | Data Type         | Null     | PK/FK | Description                                  |
+|---------------------|-------------------|----------|-------|----------------------------------------------|
+| Assessment_ID       | NUMBER(8)        | NOT NULL | PK    | Unique identifier for each health assessment |
+| Client_ID           | NUMBER(8)        | NOT NULL | FK    | Foreign key referencing the Clients table    |
+| Trainer_ID          | NUMBER(8)        | NOT NULL | FK    | Foreign key referencing the Staff table      |
+| Assessment_Time     | TIMESTAMP        | NOT NULL |       | Assessment time                              |
+| Weight              | NUMBER(5,2)      | NULL     |       | Client's weight                              |
+| BMI                 | NUMBER(5,2)      | NULL     |       | Client's BMI                                 |
+| Body_Fat_Percentage | NUMBER(5,2)      | NULL     |       | Client's body fat percentage                 |
+
 
 ## Appendices
 - **ERD and UML Diagrams**
